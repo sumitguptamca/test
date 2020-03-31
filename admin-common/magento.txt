@@ -1,0 +1,266 @@
+
+Magento to Inroads Shopping Cart Database Conversion
+----------------------------------------------------
+
+mgn_admin_user => users
+-----------------------
+username => username
+firstname => firstname
+lastname => lastname
+email => email
+
+update users set password='initialpassword' where isnull(password);
+update users set perms=524287 where isnull(perms);
+update users set creation_date=unix_timestamp() where isnull(creation_date);
+update users set modified_date=unix_timestamp() where isnull(creation_date);
+
+Add /syncusers option to adminusers.php module to sync new users to CMS
+
+mgn_customer_entity => customers
+--------------------------------
+entity_id => id
+email => email
+created_at => create_date (convert from datetime field)
+
+mgn_customer_entity_varchar => customers
+----------------------------------------
+(save only rows with attribute_id=5)
+entity_id => id (Key)
+value => fname
+
+mgn_customer_entity_varchar => customers
+----------------------------------------
+(save only rows with attribute_id=6)
+entity_id => id (Key)
+value => mname
+
+mgn_customer_entity_varchar => customers
+----------------------------------------
+(save only rows with attribute_id=7)
+entity_id => id (Key)
+value => lname
+
+mgn_customer_address_entity_varchar => customers
+------------------------------------------------
+(save only rows with attribute_id=22)
+entity_id => id (Key)
+value => company
+
+update customers set ip_address='70.86.182.194';
+
+
+mgn_customer_address_entity => billing_information
+--------------------------------------------------
+entity_id => id
+parent_id => parent
+
+mgn_customer_address_entity_text => billing_information
+-------------------------------------------------------
+(save only rows with attribute_id=23)
+entity_id => id (Key)
+value => address1
+
+mgn_customer_address_entity_varchar => billing_information
+----------------------------------------------------------
+(save only rows with attribute_id=24)
+entity_id => id (Key)
+value => city
+
+mgn_customer_address_entity_varchar => billing_information
+----------------------------------------------------------
+(save only rows with attribute_id=26)
+entity_id => id (Key)
+value => state
+
+mgn_customer_address_entity_varchar => billing_information
+----------------------------------------------------------
+(save only rows with attribute_id=28)
+entity_id => id (Key)
+value => zipcode
+
+mgn_customer_address_entity_varchar => billing_information
+----------------------------------------------------------
+(save only rows with attribute_id=25)
+entity_id => id (Key)
+value => country
+
+mgn_customer_address_entity_varchar => billing_information
+----------------------------------------------------------
+(save only rows with attribute_id=29)
+entity_id => id (Key)
+value => phone
+
+mgn_customer_address_entity_varchar => billing_information
+----------------------------------------------------------
+(save only rows with attribute_id=30)
+entity_id => id (Key)
+value => fax
+
+update billing_information set country=1;
+
+
+mgn_customer_address_entity => shipping_information
+---------------------------------------------------
+entity_id => id
+parent_id => parent
+
+mgn_customer_address_entity_varchar => shipping_information
+------------------------------------------------
+(save only rows with attribute_id=22)
+entity_id => id (Key)
+value => company
+
+mgn_customer_address_entity_text => shipping_information
+--------------------------------------------------------
+(save only rows with attribute_id=23)
+entity_id => id (Key)
+value => address1
+
+mgn_customer_address_entity_varchar => shipping_information
+----------------------------------------------------------
+(save only rows with attribute_id=24)
+entity_id => id (Key)
+value => city
+
+mgn_customer_address_entity_varchar => shipping_information
+----------------------------------------------------------
+(save only rows with attribute_id=26)
+entity_id => id (Key)
+value => state
+
+mgn_customer_address_entity_varchar => shipping_information
+----------------------------------------------------------
+(save only rows with attribute_id=28)
+entity_id => id (Key)
+value => zipcode
+
+mgn_customer_address_entity_varchar => shipping_information
+----------------------------------------------------------
+(save only rows with attribute_id=25)
+entity_id => id (Key)
+value => country
+
+update shipping_information set profilename='Default';
+update shipping_information set country=1;
+update shipping_information set default_flag = 1;
+
+
+mgn_catalog_category_flat => categories
+---------------------------------------
+entity_id => id
+description => short_description
+is_active => status
+meta_description => seo_description
+meta_keywords => seo_keywords
+meta_title => seo_title
+name => name
+meta_title => seo_title
+url_key => seo_url
+
+update categories set status=99 where status=0;
+update categories set status=0 where status=1;
+update categories set status=1 where status=99;
+
+categories => images  (type = Category)
+--------------------
+categories_id => parent
+categories_image => filename
+
+categories_description => categories
+------------------------------------
+categories_id => id (Key)
+categories_name => name
+categories_description => short_description
+categories_head_title_tag => seo_title
+categories_head_desc_tag => seo_description
+categories_head_keywords_tag => seo_keywords
+
+mgn_catalog_category_flag => subcategories
+------------------------------------------
+entity_id => related_id
+parent_id => parent
+position => sequence
+
+mgn_catalog_product_flat_1 => products
+--------------------------------------
+entity_id => id
+name => name
+short_description => short_description
+url_key => seo_url
+
+update products set status=0;
+
+mgn_catalog_product_flat_1 => product_inventory
+-----------------------------------------------
+entity_id => parent
+price => price
+sku => part_number
+weight => weight
+
+mgn_catalog_product_flat_1 => images  (type = Product)
+------------------------------------
+(remove directories from small_image filenames)
+entity_id => parent
+name => description
+small_image => filename
+
+mgn_catalog_product_entity_text => products
+-------------------------------------------
+(save only rows with attribute_id=57)
+entity_id => id (Key)
+value => long_description
+
+mgn_catalog_product_entity_text => products
+-------------------------------------------
+(save only rows with attribute_id=68)
+entity_id => id (Key)
+value => seo_keywords
+
+mgn_catalog_product_entity_varchar => products
+-------------------------------------------------------
+(save only rows with attribute_id=67)
+entity_id => id (Key)
+value => seo_title
+
+mgn_catalog_product_entity_varchar => products
+-------------------------------------------------------
+(save only rows with attribute_id=69)
+entity_id => id (Key)
+value => seo_description
+
+delete from products where isnull(name);
+
+mgn_catalog_product_entity_varchar => product_inventory
+-------------------------------------------------------
+(save only rows with attribute_id=497)
+entity_id => parent (Key)
+value => price
+
+mgn_cataloginventory_stock_item => product_inventory
+----------------------------------------------------
+product_id => parent (Key)
+qty => qty
+min_qty => min_qty
+
+delete from product_inventory where isnull(part_number);
+
+custom query => product_inventory/product_attributes
+----------------------------------------------------
+select o.product_id,ti.title,p.price from mgn_catalog_product_option o join mgn_catalog_product_option_type_value t on t.option_id=o.option_id join mgn_catalog_product_option_type_price p on p.option_type_id=t.option_type_id join mgn_catalog_product_option_type_title ti on ti.option_type_id=t.option_type_id where o.product_id in (select entity_id from mgn_catalog_product_flat_1) and p.price!=0.00 order by o.product_id,o.sort_order,t.sort_order;
+
+(save only rows with existing option_id values)
+product_id => parent
+price => price
+option_id => attributes
+
+(save only unique product_id and attr_id rows)
+product_id => parent
+attr_id => related_id
+
+mgn_catalog_category_products => category_products
+--------------------------------------------------
+category_id => parent
+product_id => related_id
+position => sequence
+
+

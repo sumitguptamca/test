@@ -1,0 +1,52 @@
+#
+#           Inroads CartEngine Setup Script
+#
+[Dirs]
+$DOCROOT/cartengine
+$DOCROOT/cartengine/images
+$DOCROOT/cartengine/RazorFlow
+$DOCROOT/admin
+$DOCROOT/admin/modules
+$DOCROOT/admin/payment
+$DOCROOT/admin/shipping
+$DOCROOT/admin/shopping
+$DOCROOT/admin/wrapper
+$DOCROOT/admin/backups
+$DOCROOT/admin/tickets
+$DOCROOT/admin/upgrade
+$DOCROOT$SUPPORTDIR/plugins
+
+[Files]
+cartengine/*.php,$DOCROOT
+cartengine/*.js,$DOCROOT
+cartengine/*.css,$DOCROOT
+images/*,$DOCROOT/cartengine
+RazorFlow/*,$DOCROOT/cartengine
+admin/*.php,$DOCROOT
+modules/*,$DOCROOT/admin
+help/*,$DOCROOT/admin
+skins/*,$DOCROOT/admin
+upgrade/*,$DOCROOT/admin
+plugins/admin.php,$DOCROOT$SUPPORTDIR
+
+[Info]
+Product=Inroads CartEngine
+ConfigFileNames=wsd.conf
+$if WIN32
+PHPPrograms=C:\PROGRA~1\php\php.exe,C:\PHP\php.exe
+$else
+PHPPrograms=/usr/local/bin/php,/usr/bin/php,./php
+$endif
+UpgradeProgram=$PHP $DOCROOT/admin/upgrade/upgradecartsite.php
+
+[DeleteFiles]
+$DOCROOT/admin/upgrade/upgradecartsite.php
+$DOCROOT/admin/upgrade/upgradeutil.php
+$DOCROOT/admin/upgrade/import_customer_activity.php
+$DOCROOT/admin/upgrade/import_product_activity.php
+$DOCROOT/admin/upgrade/upgradeorders.php
+$DOCROOT/admin/upgrade/updatecartsite.sql
+
+[DeleteDirs]
+$DOCROOT/admin/upgrade
+

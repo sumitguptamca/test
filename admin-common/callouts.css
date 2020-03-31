@@ -1,0 +1,58 @@
+/*
+               Inroads Shopping Cart - Callouts Style Sheet
+
+                      Written 2015 by Randall Severy
+                       Copyright 2015 Inroads, LLC
+*/
+
+.callout_header {
+  text-align: left;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+#callouts_grid .aw-column-1 { text-align: center; }
+#callouts_grid .aw-column-3 { text-align: center; }
+#callouts_grid .aw-column-4 { text-align: center; }
+
+.callout_table {
+  position: relative;
+}
+
+.pos_button {
+  position: absolute;
+  top: 43px;
+  left: 118px;
+  height: 26px;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  background:#dcdcdc;
+  background:-moz-linear-gradient(top, #efefef, #dcdcdc 100%);
+  background:-webkit-gradient(linear, 0 0, 0 100%, from(#efefef), color-stop(100%, #dcdcdc));
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#efefef', endColorstr='#dcdcdc');
+  color:#545454;
+  border:1px solid #919191;
+  margin-left: 20px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  cursor: pointer;
+}
+
+.callout_note_cell {
+  width: 382px;
+}
+
+#fieldtable.position_table {
+  padding: 0px;
+}
+
+.drag_container {
+  position: relative;
+}
+
+.dragme {
+  position: absolute;
+  cursor: move;
+}
+

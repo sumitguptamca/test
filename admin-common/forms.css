@@ -1,0 +1,43 @@
+/*
+             Inroads Control Panel/Shopping Cart - Forms Tab Style Sheet
+
+                         Written 2012-2016 by Randall Severy
+                          Copyright 2012-2016 Inroads, LLC
+*/
+
+.admin_screen_body {
+  margin: 10px 0px 0px 0px;
+  padding: 0 10px 10px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.form_list_cell {
+  text-align: left;
+}
+
+.form_options_cell {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.form_options_div {
+  border: 1px solid #7F9DB9;
+  padding: 10px;
+}
+
+label {
+  padding-right: 10px;
+}
+
+#form_iframe {
+  border-top: 1px solid #9d9d9d;
+  margin-top: 7px;
+}
+
+@media print {
+  body { background: none !important; }
+  .bottom_buttons { display: none; }
+  .button_table { display: none; }
+  #contentArea1 { height: 100% !important; overflow: visible !important; }
+}
+

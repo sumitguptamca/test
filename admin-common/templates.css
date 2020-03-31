@@ -1,0 +1,120 @@
+/*
+             Inroads Control Panel/Shopping Cart - Templates Tab Style Sheet
+
+                        Written 2012-2015 by Randall Severy
+                         Copyright 2012-2015 Inroads, LLC
+*/
+
+.admin_screen_body {
+  margin: 10px 0px 0px 0px;
+  padding: 0 10px 10px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+#templates_grid .aw-column-5 { text-align: center; }
+#custom_templates_grid .aw-column-5 { text-align: center; }
+
+textarea {
+  font-size: 12px;
+}
+
+input {
+  font-size: 12px;
+}
+
+.insert_button {
+  font-size: 11px;
+  height: 22px;
+  width: 118px;
+}
+
+#attachments {
+  display: inline;
+  float: left;
+}
+
+.qq-uploader {
+  width: 450px;
+}
+
+.qq-drop-label {
+  position: absolute;
+  top: 3px;
+  left: 100px;
+  color: #636466;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.qq-upload-drop-area span {
+  margin-top: -10px;
+}
+
+.qq-upload-button {
+  color: #636466;
+  font-size: 12px;
+  font-weight: bold;
+  width: 90px;
+  padding: 3px 0px;
+  background: #FFFFFF;
+  border: 1px solid #7F9DB9;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.qq-upload-list {
+  margin: 0px;
+  list-style: none;
+}
+
+.qq-upload-list li {
+  margin-top: 4px;
+}
+
+.qq-upload-drop-area {
+  color: #636466;
+  font-size: 12px;
+  font-weight: bold;
+  height: 23px;
+  min-height: 23px;
+  background: #C9CBCD;
+}
+
+.qq-upload-spinner {
+  background: url("images/loading.gif");
+}
+
+.qq-upload-file a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.qq-upload-file a:hover {
+  text-decoration: underline;
+}
+
+.qq-delete-file a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.qq-delete-file a:hover {
+  text-decoration: underline;
+}
+
+.browse-server-button {
+  float: left;
+  color: #636466;
+  font-size: 12px;
+  font-weight: bold;
+  width: 118px;
+  padding: 3px 0px;
+  background: #FFFFFF;
+  border: 1px solid #7F9DB9;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+

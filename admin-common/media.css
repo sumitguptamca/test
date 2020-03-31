@@ -1,0 +1,94 @@
+/*
+          Inroads Control Panel/Shopping Cart - Media Lists Tab Style Sheet
+
+                       Written 2014-2017 by Randall Severy
+                        Copyright 2014-2017 Inroads, LLC
+*/
+
+.documents_tab { width: 110px; }
+.sections_tab { width: 110px; }
+.users_tab { width: 80px; }
+
+div.title { width: 150px; }
+
+#libraries_grid .aw-column-2 { text-align: center; }
+#libraries_grid .aw-column-3 { text-align: center; }
+
+#sections_grid .aw-column-1 { text-align: center; }
+#sections_grid .aw-column-4 { text-align: center; }
+#sections_grid .aw-column-5 { text-align: center; }
+
+body#media div.titlebar {
+  float: none;
+  width: 100%;
+  padding: 0px;
+}
+
+body#media.screenBody div.titlebar div.title {
+  min-width: 172px !important;
+}
+
+body#media.screenBody div.titlebar div.title h1 {
+  padding-left: 12px;
+}
+
+body#media.screenBody div.titlebar div.filters {
+  padding-right: 12px;
+}
+
+#sections_content div.titlebar {
+  margin-top: 7px;
+  border-bottom: none;
+}
+
+#sections_content div.title {
+  width: 100%;
+}
+
+.sections_table {
+  width: 100%;
+}
+
+.sections_grid_cell {
+  width: 100%;
+}
+
+.section_docs_table {
+  width: 100%;
+}
+
+.section_docs_grid_cell {
+  width: 100%;
+}
+
+td.miniButtons {
+  padding: 33px 0px 0px 14px;
+  width: 10%;
+}
+
+#section_docs_grid .aw-column-1 { text-align: center; }
+#section_docs_grid .aw-column-3 { text-align: center; }
+#section_docs_grid .aw-column-6 { text-align: center; }
+
+#documents_grid .aw-column-2 { text-align: center; }
+#documents_grid .aw-column-5 { text-align: center; }
+
+#section_images_grid .aw-column-1 { text-align: center; }
+
+#section_images_videos_grid .aw-column-1 { text-align: center; }
+#section_images_videos_grid .aw-column-3 { text-align: center; }
+#section_images_videos_grid .aw-column-5 { text-align: center; }
+
+#images_videos_grid .aw-column-2 { text-align: center; }
+
+#users_grid .aw-column-5 { text-align: center; }
+
+#info_table { width: 100%; }
+#content_table { width: 100%; }
+#downloads_table { width: 100%; }
+
+.url_button {
+  width: 50px;
+  margin-left: 5px;
+  font-size: 11px;
+}

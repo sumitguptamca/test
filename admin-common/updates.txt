@@ -1,0 +1,173 @@
+
+Inroads Shopping Cart Updates
+=============================
+
+4/19/10 - Changes to forms table in both cartsite and website databases
+          Add countries and states tables to website databases (import initwebsite.sql if new)
+5/3/10 - Add seo_category field to products table
+5/24/10 - Add shipped_date to orders table and google_base_id to products table
+6/21/10 - Add fee_name, fee_amount and payment_method to orders table
+7/27/10 - New styles in admin/colors.css
+9/9/10 - Add weight to orders table
+9/29/10 - Add indices to images table
+10/28/10 - Add balance_due field to orders table and menu_name fields to categories and products table
+12/2/10 - Add module_perms and custom_perms fields to users table
+12/6/10 - Add .webmail_tab class to colors.css
+12/28/10 - Add margin style to input fields in colors.css
+1/6/11 - Add $cms_base_url and $cms_support_url to config.php
+4/6/11 - Add product_data table and remove module tab styles from colors.css
+4/12/11 - Add overlay_image to attribute_options table
+6/6/11 - Add product_type to products table
+7/21/11 - Add url to attributes table
+7/25/11 - Add quickbooks_id to products table
+7/27/11 - Add qb_inv_id to inventory table and quickbooks_id to attribute_options table
+8/19/11 - Add select_function to attributes table
+9/12/11 - Change overlay_image from varchar(255) to text
+9/13/11 - Add discount_name and discount_amount to orders table
+9/16/11 - Add required flag to attributes table
+10/5/11 - Add category_type to categories table
+12/13/11 - Add multiple flag to attributes table
+1/26/12 - Add new punch_list database table
+3/22/12 - Add new accounts and user_accounts tables
+4/12/12 - Add orig_width and orig_height to images table
+4/24/12 - Add new web_sites table, add websites field to categories and products table
+          Add website field to orders table
+
+=============================
+
+Replace admin/index.php with cartsite/admin/index.php
+
+Remove admin/admin.php and admin/admin.js
+
+Update all non-Inroads Admin users with CMS permissions
+
+admin/colors.css
+----------------
+
+.webmail_tab { width: 75px; }
+
+.fieldprompt { color: #0064A3; font-weight: normal; }
+.perms_link,.perms_link a { font-size: 11px; color: #0064A3; }
+
+input.text,textarea.textarea,select.select,input.password,.htmleditor_div,
+input.browse_button {
+  border: 1px solid #7F9DB9;
+  margin: 0px;
+}
+input.browse_button { background-color: #FFFFFF; }
+
+Remove DatePicker Window section and add Date Field Calendars section
+
+/*  Colors for WYSIWYG Editor  */
+
+.TB_ToolbarSet, .TB_Expand, .TB_Collapse { background-color: #eeeeee; }
+.TB_ToolbarSet { border-top: #eeeeee 1px outset; border-bottom: #eeeeee 1px outset; }
+.TB_Expand, .TB_Collapse { border: #eeeeee 1px outset; }
+.TB_Button_On, .TB_Button_Off, .TB_Button_On_Over, .TB_Button_Off_Over, .TB_Button_Disabled
+{ border: #eeeeee 1px solid; }
+.TB_Button_Off .TB_Button_Text { background-color: #eeeeee; }
+.TB_Button_Off .TB_Text { background-color: #eeeeee; }
+.SC_FieldCaption { background-color: #eeeeee; }
+#xEditingArea { border-color: #7F9DB9; }
+
+admin/config.php
+----------------
+
+Remove UNIX and WINDOWS defines and get_server_type function
+
+Add $prefix (if needed) and $docroot variables
+
+$cms_cookie = "WSDIPUser";
+$cms_base_url = $prefix."/cgi-bin/editor/wsd";
+$cms_support_url = "/editor-support";
+
+Remove UserCookie config setting from CMS
+
+Remove $category_updates_rebuild_web_site and $use_state_tax_table and $add_to_cart_auto_continue or
+move to custom-config.php if not set to default values
+
+$php_program = "/usr/local/bin/php";
+
+admin/templates-config.php
+--------------------------
+
+if (file_exists("cartengine/templates-config.php"))
+   require 'cartengine/templates-config.php';
+else require '../cartengine/templates-config.php';
+
+"Contact Us","Mailing List","Email a Friend" added to $template_names
+
+'cartconfig' => 'Cart Config:' added to $template_tables
+
+'cartconfig' => CUSTOM_PREFIX added to $template_prefixes
+
+Second line of template_lookup_custom_variable:
+
+    if (isset($field_value)) return $field_value;
+
+cart/cart.css
+-------------
+
+In .comments_field:
+
+  height: 145px;
+
+.registry_comments_field {
+  width: 280px;
+  height: 60px;
+  font-size: 11px;
+  font-weight: normal;
+  font-family: Arial;
+  color: #5c2624;
+}
+.registry_message_field {
+  width: 280px;
+  height: 60px;
+  font-size: 11px;
+  font-weight: normal;
+  font-family: Arial;
+  color: #5c2624;
+}
+.registry_category_name,.cart_font td.registry_category_name {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: Arial;
+  color: #5c2624;
+}
+
+Remove all cart_button styles
+
+custom-config.php
+-----------------
+
+copy cart-options.php+customer-options.php+order-options.php+product-options.php+report-options.php custom-config.php
+
+Edit custom-config.php and remove all default values and functions
+
+custom-config.js
+----------------
+
+copy customer-options.js+order-options.js+product-options.js+report-options.js custom-config.js
+
+Edit custom-config.js and remove all default values and functions
+
+.htaccess
+---------
+
+ErrorDocument 404 /redirect.php
+
+RewriteRule ^products/(.*)/$ display-product.php?id=$1 [L]
+
+Upload cartsite/redirect.php and cartsite/redirect.conf to document root directory
+
+Clear out old Category and Product rewrite rules
+
+Run http://www.domain.com/cartengine/categories.php?cmd=initseo
+Run http://www.domain.com/cartengine/categories.php?cmd=rebuildhtaccess
+
+update users set perms=2097151;
+update categories set last_modified=unix_timestamp();
+update products set last_modified=unix_timestamp();
+
+Import updates.sql with -f option
+

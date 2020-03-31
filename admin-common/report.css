@@ -1,0 +1,148 @@
+/*
+            Inroads Control Panel/Shopping Cart - Report HTML Output Style Sheet
+
+                        Written 2007-2017 by Randall Severy
+                         Copyright 2007-2017 Inroads, LLC
+*/
+
+body {
+  margin: 10px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 0px;
+}
+
+h1.header1 {
+  color: #1F497D;
+  font-size: 20px;
+  text-align: center;
+  margin: 0px;
+}
+
+h2 {
+  font-size: 22px;
+  margin: 0px;
+}
+
+h2.header2 {
+  font-size: 16px;
+  text-align: center;
+  font-weight: normal;
+  margin: 0px;
+}
+
+.report_table {
+}
+
+.report_header_sep_row {
+  height: 10px;
+}
+
+.report_header_row {
+}
+
+tr.report_header_row th {
+  background-color: #1F497D;
+  color: #FFFFFF;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.report_row {
+}
+
+.report_row td {
+  padding: 6px 6px 6px 0px;
+}
+
+.report_row td a {
+  text-decoration: none;
+  color: #000000;
+}
+
+td.first_column {
+  padding-left: 6px;
+}
+
+.odd_report_row {
+}
+
+.even_report_row {
+}
+
+tr.even_report_row td {
+  background-color: #CADCF2;
+}
+
+.report_form {
+}
+
+.report_prompt {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.report_total {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+th.first_column {
+  padding-left: 6px;
+}
+
+th {
+  font-size: 12px;
+  padding-right: 6px;
+}
+
+td {
+  font-size: 12px;
+}
+
+.print_close_table {
+  position: fixed;
+  right: 10px;
+  top: 5px;
+}
+
+.bold_report_cell {
+  font-weight: bold;
+}
+
+.green_report_cell, tr.even_report_row td.green_report_cell {
+  background-color: #ABEBC6;
+}
+
+.red_report_cell, tr.even_report_row td.red_report_cell {
+  background-color: #F5B7B1;
+}
+
+@media print { .print_close_table { display:none; }}
+
+a:link.print_close_links {
+  text-decoration:none;
+  font-size: 10px;
+  font-weight: normal;
+  font-family: Arial;
+  color: #0055A4;
+}
+a:visited.print_close_links {
+  text-decoration:none;
+  font-size: 10px;
+  font-weight: normal;
+  font-family: Arial;
+  color: #0055A4;
+}
+a:hover.print_close_links {
+  text-decoration:none;
+  font-size: 10px;
+  font-weight: normal;
+  font-family: Arial;
+  color: #0055A4;
+}
+

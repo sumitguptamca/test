@@ -1,0 +1,474 @@
+/*
+                 Inroads Shopping Cart - Orders Tab Style Sheet
+
+                      Written 2008-2018 by Randall Severy
+                       Copyright 2008-2018 Inroads, LLC
+*/
+
+#orders_grid .aw-column-0 { text-align: center; }
+#orders_grid .aw-column-2 { text-align: center; }
+#orders_grid .aw-column-3 { text-align: center; }
+#orders_grid .aw-column-7 { text-align: center; }
+#orders_grid .aw-column-8 { text-align: right; }
+#orders_grid .aw-column-9 { text-align: right; }
+
+#quotes_grid .aw-column-1 { text-align: center; }
+#quotes_grid .aw-column-5 { text-align: center; }
+#quotes_grid .aw-column-6 { text-align: right; }
+
+#invoices_grid .aw-column-1 { text-align: center; }
+#invoices_grid .aw-column-5 { text-align: center; }
+#invoices_grid .aw-column-6 { text-align: right; }
+
+.order_tab { width: 80px; }
+.items_tab { width: 80px; }
+.billing_tab { width: 80px; }
+.shipping_tab { width: 80px; }
+.comments_tab { width: 120px; }
+
+.tab_section { width: 530px; }
+.update_tab_row_middle { width: 90px; }
+.update_tab_row_middle_no_items { width: 170px; }
+.add_tab_row_middle { width: 450px; }
+
+table.fieldtable {
+  margin: 5px;
+}
+
+.filter_select {
+  width: 148px;
+}
+
+.filter label {
+  vertical-align: middle;
+}
+
+.update_print_div {
+  height: 27px;
+  display: inherit;
+}
+
+#print_options {
+  padding: 6px 12px 0px 0px;
+  font-size: 13px;
+}
+
+#print_options select {
+  color: #666666;
+  border: 1px solid #a8a8a8;
+}
+
+#order_information td.fieldprompt {
+  width: 296px;
+}
+
+#orders #print_options select {
+  width: 100%;
+}
+
+#edit_order #print_options select {
+  margin-top: 3px;
+}
+
+.section_title {
+  color: #0064A3;
+  font-size: 16px !important;
+  font-weight: bold;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.order_item_title {
+  color: #0064A3;
+  font-size: 14px !important;
+  font-weight: bold;
+}
+
+.status_box {
+  padding: 0px;
+  width: 450px;
+  float: left;
+}
+
+#status_table {
+  padding: 2px;
+}
+
+.account_box {
+  padding: 0px;
+  width: 320px;
+  float: right;
+}
+
+#account_table {
+  padding: 2px;
+}
+
+.customer_orders_div {
+  max-height: 143px;
+  overflow-y: auto;
+}
+
+.comments_div {
+  width: 450px;
+  max-height: 75px;
+  overflow: auto;
+}
+
+#comments {
+  width: 385px;
+}
+
+.short_comments_div {
+  width: 200px;
+  max-height: 75px;
+  overflow: auto;
+}
+
+.notes_div {
+  width: 450px;
+  max-height: 75px;
+  overflow: auto;
+}
+
+#notes {
+  width: 385px;
+}
+
+.short_notes_div {
+  width: 200px;
+  max-height: 75px;
+  overflow: auto;
+}
+
+.terms_div {
+  width: 450px;
+  max-height: 75px;
+  overflow: auto;
+}
+
+.add_edit_order_box #terms_div {
+  border: 0px !important;
+}
+
+.short_terms_div {
+  width: 200px;
+  max-height: 75px;
+  overflow: auto;
+}
+
+.gift_message_div {
+  width: 450px;
+  max-height: 75px;
+  overflow: auto;
+}
+
+.short_gift_message_div {
+  width: 200px;
+  max-height: 75px;
+  overflow: auto;
+}
+
+.item_table {
+  margin: 5px;
+}
+
+.item_table th {
+  font-size: 14px;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: normal;
+  color: #0064A3;
+  padding: 1px;
+  padding-top: 5px;
+  border-bottom: 1px solid #000000;
+}
+
+.item_table tr {
+  cursor: pointer;
+}
+
+.item_table td {
+  font-size: 12px;
+  font-family: Arial,Helvetica,sans-serif;
+  padding: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.add_edit_order_box {
+  width: 390px;
+  margin: 10px 0px 10px 0px;
+  padding: 5px;
+  border: 1px solid #DBDBDB;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  position: relative;
+}
+
+#send_emails {
+  margin-left: 20px;
+}
+
+.add_edit_order_customer_box {
+  width: 320px;
+}
+
+.add_edit_order_legend {
+  color: #666666;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0px 8px;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background: #FFFFFF;
+}
+
+.add_edit_order_state {
+  width: 208px;
+}
+
+.add_edit_order_country {
+  width: 208px;
+}
+
+.customer_name_div {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.add_edit_order_customer_buttons {
+  padding: 10px;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+#shipping_table tr, #order_info_table tr {
+  height: 20px;
+}
+
+#account {
+  max-width: 310px;
+}
+
+.add_edit_order_product_table {
+  border-color: #DBDBDB;
+  border-style: solid;
+  border-width: 1px;
+  border-collapse: collapse;
+}
+.add_edit_order_product_table th {
+  font-size: 12px;
+  text-align: center;
+  padding-right: 0px;
+}
+
+.add_edit_order_product_table td {
+  border-color: #DBDBDB;
+  border-style: solid;
+  border-width: 1px;
+}
+
+td.left_product_cell {
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+td.account_id_cell {
+  padding-top: 2px;
+}
+
+td.part_number_cell {
+  padding-top: 2px;
+}
+
+td.product_price_cell {
+  padding-top: 2px;
+  padding-right: 5px;
+}
+
+td.product_qty_cell {
+  padding-top: 2px;
+}
+
+td.product_total_cell {
+  padding-top: 2px;
+  padding-right: 2px;
+}
+
+td.product_delete_cell {
+  padding-top: 2px;
+}
+
+.add_edit_order_product_table td input {
+  font-size: 12px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.add_edit_order_rma_box {
+  margin-top: 20px;
+}
+
+.add_edit_order_rma_table th {
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+.add_edit_order_comments textarea {
+  border: 0px !important;
+}
+
+.attributes_div td {
+  border: 0px;
+}
+
+.attr_price {
+  padding-left: 10px;
+}
+
+.qty_error {
+  color: #FF0000;
+  font-size: 11px;
+  padding-left: 20px;
+}
+
+.payment_div {
+  position: relative;
+}
+
+.update_payment_div {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 12px;
+}
+
+.refund_amount_div {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  font-size: 12px;
+}
+
+#add_shipment_button_div {
+  height: 27px;
+  display: inherit;
+}
+
+.shipment_div {
+  position: relative;
+}
+
+.update_shipment_div {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 12px;
+}
+
+#order_info_table input[type="checkbox"] {
+  margin-bottom: 0px;
+}
+
+.rma_item {
+  padding-left: 20px;
+  font-style: italic;
+}
+
+#ship_items_table input[type="text"] {
+  text-align: center;
+}
+
+.file_upload_attr {
+  display: inline;
+  float: left;
+  min-width: 190px;
+}
+
+.qq-drop-label {
+  position: absolute;
+  top: 2px;
+  left: 80px;
+  color: #636466;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.qq-upload-drop-area span {
+  margin-top: -10px;
+}
+
+.qq-upload-button {
+  color: #636466;
+  font-size: 11px;
+  font-weight: bold;
+  width: 75px;
+  padding: 2px 0px;
+  background: #FFFFFF;
+  border: 1px solid #7F9DB9;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.qq-upload-list {
+  margin: 0px;
+  list-style: none;
+}
+
+.qq-upload-list li {
+  margin-top: 2px;
+}
+
+.qq-upload-drop-area {
+  color: #636466;
+  font-size: 12px;
+  font-weight: bold;
+  height: 23px;
+  min-height: 23px;
+  background: #C9CBCD;
+}
+
+.qq-upload-spinner {
+  background: url("images/loading.gif");
+}
+
+.qq-upload-file a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.qq-upload-file a:hover {
+  text-decoration: underline;
+}
+
+.qq-delete-file a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.qq-delete-file a:hover {
+  text-decoration: underline;
+}
+
+@media print {
+  body { background: none !important; }
+  .bottom_buttons { display: none; }
+  .button_table { display: none; }
+  #contentArea1 { height: 100% !important; overflow: visible !important; }
+  .short_comments_div {
+    max-height: 100%;
+    overflow: none;
+  }
+  .short_terms_div {
+    max-height: 100%;
+    overflow: none;
+  }
+}
+

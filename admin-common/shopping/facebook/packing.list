@@ -1,0 +1,31 @@
+#
+#         Inroads Shopping Cart - Facebook Commerce Module Setup Script
+#
+[Dirs]
+$DOCROOT/admin
+$DOCROOT/admin/shopping
+$DOCROOT/admin/shopping/facebook
+$DOCROOT/admin/upgrade
+
+[Files]
+shopping/*,$DOCROOT/admin
+installfacebook.php,$DOCROOT/admin/upgrade
+facebook.sql,$DOCROOT/admin/upgrade
+
+[Info]
+Product=Inroads Facebook Commerce Module 
+ConfigFileNames=wsd.conf
+$if WIN32
+PHPPrograms=C:\PROGRA~1\php\php.exe,C:\PHP\php.exe
+$else
+PHPPrograms=/usr/local/bin/php,/usr/bin/php
+$endif
+UpgradeProgram=$PHP $DOCROOT/admin/upgrade/installfacebook.php
+
+[DeleteFiles]
+$DOCROOT/admin/upgrade/installfacebook.php
+$DOCROOT/admin/upgrade/facebook.sql
+
+[DeleteDirs]
+$DOCROOT/admin/upgrade
+

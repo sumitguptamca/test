@@ -1,0 +1,38 @@
+Installation of Shopping.com Module
+===================================
+
+1) Upload shopping/shopping_com.php to admin/shopping directory
+
+2) Upload shopping/shopping.com/feed.php, to the admin/shopping/shopping.com
+   directory
+
+3) Import Shopping.com tables and fields with:
+
+mysql -h <hostname> -u <db user> -p<db pw> <db name> < shopping.com.sql
+
+4) Go to http://www.shopping.com
+
+5) Click on the "Merchant Login" link in the footer
+
+6) Log in with a valid Shopping.com account or create a new account
+
+7) Click on the "Datafeeds" menu item
+
+8) Click on the "Submit Datafeed" sub-menu item
+
+9) Select "Retrieve from my own FTP or HTTP location"
+
+10) Enter the following URL into the URL field:
+    http://www.domain.com/admin/shopping/shopping.com/feed.php
+
+11) Click on the "Continue" button
+
+12) Set the Shipping and Tax information and click on the "Continue" button
+
+13) Set the Shopping.com Category and Product Type for all products.
+
+14) Import the Shopping.com Category and Product Types tables using the
+    following commands:
+
+mysql -h <hostname> -u <db user> -p<db pw> <db name> < shopping_categories.sql
+mysql -h <hostname> -u <db user> -p<db pw> <db name> < shopping_product_types.sql

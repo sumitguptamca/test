@@ -1,0 +1,280 @@
+Inroads Shopping Cart Default E-Mail Templates
+==============================================
+
+New Order Notification (Admin)
+==============================
+Subject: Order Received - {config:domain_name}
+From Address: {config:admin_email}
+To Addresses: {config:admin_email}
+Cc Addresses:
+Bcc Addresses:
+
+An order has been placed at {config:domain_name}
+
+Details are as follows:
+
+Order Information
+-----------------
+Date: {order:placed_date}
+Order Number: {order:order_number}
+Sub-Total: ${order:subtotal}
+Tax: ${order:tax}
+Shipping: {order:shipping}
+Shipping Carrier: {order:shipping_carrier}
+Shipping Method: {order:shipping_method}
+{Coupon: {order:coupon_code} {order:coupon_amount}}
+Total: ${order:total}
+
+Customer Information
+--------------------
+Full Name: {order:fname} {order:mname} {order:lname}
+Phone: {billing:phone}
+{Cell: {billing:mobile}}
+{Fax: {billing:fax}}
+Email: {order:email}
+
+Billing Address
+---------------
+{billing:address1}
+{billing:address2}
+{billing:city}, {billing:state} {billing:zipcode}
+
+Shipping Address
+----------------
+{shipping:address1}
+{shipping:address2}
+{shipping:city}, {shipping:state} {shipping:zipcode}
+
+Order Items
+{order:items_text}
+
+Comments:
+{order:comments}
+
+
+New Order Notification (Customer)
+=================================
+Subject: Thank you for placing an order at {cartconfig:companyname}
+From Address: {config:admin_email}
+To Addresses: {order:email}
+Cc Addresses:
+Bcc Addresses:
+
+Dear {order:fname},
+
+Thank you for your order. We will gather and ship your products as quickly as possible.  Please feel free to call if you have any questions along the way. We are glad to help. 
+
+Your order number is {order:order_number}
+
+
+Back Order Notification
+=======================
+Subject: Your order {order:order_number} at {cartconfig:companyname} has been placed on back order
+From Address: {config:admin_email}
+To Addresses: {order:email}
+Cc Addresses:
+Bcc Addresses:
+
+Your order has been placed on back order at {config:domain_name}
+
+Details are as follows:
+
+Order Information
+-----------------
+Date: {order:placed_date}
+Order Number: {order:order_number}
+Sub-Total: ${order:subtotal}
+Tax: ${order:tax}
+Shipping: {order:shipping}
+Shipping Carrier: {order:shipping_carrier}
+Shipping Method: {order:shipping_method}
+{Coupon: {order:coupon_code} {order:coupon_amount}}
+Total: ${order:total}
+
+Customer Information
+--------------------
+Full Name: {order:fname} {order:mname} {order:lname}
+Phone: {billing:phone}
+{Cell: {billing:mobile}}
+{Fax: {billing:fax}}
+Email: {order:email}
+
+Billing Address
+---------------
+{billing:address1}
+{billing:address2}
+{billing:city}, {billing:state} {billing:zipcode}
+
+Shipping Address
+----------------
+{shipping:address1}
+{shipping:address2}
+{shipping:city}, {shipping:state} {shipping:zipcode}
+
+Order Items
+{order:items_text}
+
+Comments:
+{order:comments}
+
+
+Shipment Notification
+=====================
+Subject: Order number:{order:order_number} at {cartconfig:companyname} has been shipped
+From Address: {config:admin_email}
+To Addresses: {order:email}
+Cc Addresses:
+Bcc Addresses:
+
+Your order has been shipped from {config:domain_name}
+
+Details are as follows:
+
+Order Information
+-----------------
+Date: {order:placed_date}
+Order Number: {order:order_number}
+Sub-Total: ${order:subtotal}
+Tax: ${order:tax}
+Shipping: {order:shipping}
+Shipping Carrier: {order:shipping_carrier}
+Shipping Method: {order:shipping_method}
+{Coupon: {order:coupon_code} {order:coupon_amount}}
+Total: ${order:total}
+
+Customer Information
+--------------------
+Full Name: {order:fname} {order:mname} {order:lname}
+Phone: {billing:phone}
+{Cell: {billing:mobile}}
+{Fax: {billing:fax}}
+Email: {order:email}
+
+Billing Address
+---------------
+{billing:address1}
+{billing:address2}
+{billing:city}, {billing:state} {billing:zipcode}
+
+Shipping Address
+----------------
+{shipping:address1}
+{shipping:address2}
+{shipping:city}, {shipping:state} {shipping:zipcode}
+
+Order Items
+{order:items_text}
+
+Comments:
+{order:comments}
+
+
+Order Declined Notification
+===========================
+Subject: We're sorry.Your order {order:order_number} at {cartconfig:companyname} has been cancelled.
+From Address: {config:admin_email}
+To Addresses: {order:email}
+Cc Addresses:
+Bcc Addresses:
+
+There has been some trouble with your order. There may have been a mixup with your method of payment. Please call or email if you have any questions. We will help in any way that we can.
+
+
+Customer Registration (Customer)
+================================
+Subject: Welcome to {cartconfig:companyname}
+From Address: {config:admin_email}
+To Addresses: {customer:email}
+Cc Addresses:
+Bcc Addresses:
+
+Thank your for registering. This will help facilitate any purchases now and in the future. 
+
+
+Customer Registration (Admin)
+=============================
+Subject: New Customer Registration
+From Address: {customer:email}
+To Addresses: {config:admin_email}
+Cc Addresses:
+Bcc Addresses:
+
+The following New Customer has just registered in the shopping cart:
+
+Name: {customer:fname} {customer:lname}
+Email: {customer:email}
+Company: {customer:company}
+Created On: {customer:create_date}
+Address: {billing:address1}
+{         {billing:address2}}
+         {billing:city}, {billing:state} {billing:zipcode} {billing:country}
+Phone #: {billing:phone}
+
+
+Password Reset
+==============
+Subject: {cartconfig:companyname} Password Reset Instructions
+From Address: {config:admin_email}
+To Addresses: {customer:email}
+Cc Addresses:
+Bcc Addresses:
+
+Please use the following link to reset your password.
+
+If the hyperlink is not available, copy and paste the link below to access the password reset link.  Make sure that you copy and paste the full link into the browser URL address bar.
+
+{config:ssl_url}cart/lost-password.php?email={customer:encoded_email}&resetid={customer:crc_password}
+
+
+Contact Us
+==========
+Subject: {form:subject} Contact Form
+From Address: {config:admin_email}
+To Addresses: {config:admin_email}
+Cc Addresses:
+Bcc Addresses:
+
+{form:fname} {form:lname}
+
+Email Address: {form:email}
+Comments:
+{form:comments}
+
+Mailing List
+============
+Subject: {cartconfig:companyname}: {form:fname} {form:lname} has joined our mailing list.
+From Address: {config:admin_email}
+To Addresses: {config:admin_email}
+Cc Addresses:
+Bcc Addresses:
+
+{form:fname} {form:lname}
+
+Email Address: {form:email}
+Address:
+{form:address}
+{form:address2}
+{form:city}, {form:state} {form:zipcode}
+
+Phone: {form:phone} | Fax: {form:fax}
+
+Birthday: {form:bdmonth} {form:bdday}, {form:bdyear}
+
+{form:fname} {form:lname} would like to receive specials and discount coupons by email? {form:receivediscount}
+
+{form:fname} {form:lname} prefers emails to be sent in {form:emailformat}
+
+
+Email a Friend
+==============
+Subject: {form:FirstName} {form:LastName} has sent you an Email from {cartconfig:companyname}
+From Address: {config:admin_email}
+To Addresses: {form:FriendEMails}
+Cc Addresses:
+Bcc Addresses:
+
+{form:FirstName} {form:LastName} has sent you an e-mail from {cartconfig:companyname} for {form:producturl}
+
+Comments from {form:FirstName}:
+{form:comments}
+

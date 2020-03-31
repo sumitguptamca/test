@@ -1,0 +1,15 @@
+#
+#        Inroads CartEngine Glasses Vendor Module Setup Script
+#
+[Dirs]
+$DOCROOT/admin
+$DOCROOT/admin/vendors
+
+[Files]
+glasses-common.php,$DOCROOT/admin
+vendors/*,$DOCROOT/admin
+
+[Info]
+Product=Inroads CartEngine Vendor Module
+ConfigFileNames=wsd.conf
+

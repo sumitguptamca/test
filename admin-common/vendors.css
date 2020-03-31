@@ -1,0 +1,161 @@
+/*
+                   Inroads Shopping Cart - Vendors Tab Style Sheet
+
+                         Written 2015-2019 by Randall Severy
+                          Copyright 2015-2019 Inroads, LLC
+*/
+
+#vendors_grid .aw-column-4 { text-align: center; }
+#vendors_grid .aw-column-5 { text-align: right; }
+#vendors_grid .aw-column-6 { text-align: right; }
+#vendors_grid .aw-column-7 { text-align: right; }
+
+#imports_grid {
+  float: left;
+}
+
+#imports_grid .aw-column-0 { text-align: center; }
+#imports_grid .aw-column-2 { text-align: center; }
+#imports_grid .aw-column-3 { text-align: center; }
+#imports_grid .aw-column-4 { text-align: center; }
+#imports_grid .aw-column-5 { text-align: center; }
+#imports_grid .aw-column-6 { text-align: center; }
+#imports_grid .aw-column-7 { text-align: center; }
+
+#summary_table {
+  width: 100%;
+  padding: 10px 0px;
+}
+
+#summary_table td {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#summary_table .fieldprompt {
+  width: 210px;
+}
+
+#account_table {
+  width: 100%;
+}
+
+#account_table .fieldprompt {
+  width: 135px;
+}
+
+#markups_table {
+  width: 100%;
+  text-align: center;
+  border-spacing: 4px;
+  border-collapse: separate;
+  padding: 5px 95px;
+}
+
+#markups_table td {
+  white-space: nowrap;
+}
+
+#settings_table {
+  width: 100%;
+}
+
+#settings_table .fieldprompt {
+  width: 150px;
+}
+
+#edi_table {
+  width: 100%;
+}
+
+.innerprompt {
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+#edi_table .innerprompt {
+  display: inline-block;
+  width: 70px;
+}
+
+#import_settings {
+  width: 100%;
+}
+
+#import_options {
+  width: 100%;
+}
+
+#import_shopping {
+  width: 100%;
+}
+
+.sheet_num {
+  padding-left: 30px;
+}
+
+#addl_match_field {
+  width: 125px;
+}
+
+.button_cell td {
+  padding-left: 6px;
+}
+
+.add_edit_import_table .innerprompt {
+  padding-left: 5px;
+}
+
+label {
+  padding-right: 5px;
+}
+
+.add_edit_import_table a {
+  color: #000000;
+}
+
+.add_edit_import_table select {
+  width: 140px;
+}
+
+.add_edit_import_table select#group_template {
+  width: auto;
+}
+
+.mappingtable th {
+  font-size: 12px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.sequence_cell input {
+  width: 20px;
+  text-align: center;
+}
+
+.sep_cell input {
+  width: 20px;
+  text-align: center;
+}
+
+.req_cell input {
+  margin: 0px;
+}
+
+td.shopping_section {
+  text-align: left;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.shopping_title {
+  position: relative;
+}
+
+.shopping_flag {
+  font-weight: normal;
+  font-size: 12px;
+  position: absolute;
+  top: 2px;
+  left: 180px;
+}
+

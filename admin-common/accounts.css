@@ -1,0 +1,53 @@
+/*
+                   Inroads Shopping Cart - Accounts Tab Style Sheet
+
+                         Written 2011-2017 by Randall Severy
+                          Copyright 2011-2017 Inroads, LLC
+*/
+
+.info_tab { width: 100px; }
+.rates_tab { width: 80px; }
+.tab_section { width: 440px; }
+.tab_row_middle { width: 260px; }
+.tab_content { padding-left: 5px; }
+
+.filter_select {
+  width: 148px;
+}
+
+.filter label {
+  vertical-align: middle;
+}
+
+#account_info_table {
+  width: 100%;
+}
+
+#account_rates_table {
+  width: 100%;
+}
+
+.fieldtable th {
+  color: #0064A3;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+input.discount {
+  text-align: right;
+}
+
+.small_search_div {
+  width: 210px;
+}
+
+.small_search_input {
+  left: 60px;
+  width: 100px;
+}
+
+.small_search_reset {
+  left: 171px;
+}
+

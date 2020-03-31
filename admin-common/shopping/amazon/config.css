@@ -1,0 +1,41 @@
+/*
+             Inroads Shopping Cart - Amazon Cart Config Style Sheet
+
+                           Written 2018 by Randall Severy
+                            Copyright 2018 Inroads, LLC
+*/
+
+#amazon_config_table {
+  border: 0px;
+}
+
+#amazon_config_table table {
+  margin: 0px auto;
+}
+
+#shopping_table .amazon_shipping .fieldprompt {
+  width: 90px;
+}
+
+.amazon_shipping_title {
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.amazon_status_title {
+  text-align: center;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.amazon_sync_table th {
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+}
+
+td.sync_flag {
+  text-align: left;
+}
+

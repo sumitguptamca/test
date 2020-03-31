@@ -1,0 +1,55 @@
+Installation of Amazon Module
+=============================
+
+1) Upload shopping/amazon.php to admin/shopping directory
+
+2) Upload shopping/amazon/amazon.php, config.php, config.js, and admin.php
+   to the admin/shopping/amazon directory
+
+3) Import Amazon tables and fields with:
+
+mysql -h <hostname> -u <db user> -p<db pw> <db name> < amazon.sql
+
+4) Import Amazon Item Types table with:
+
+mysql -h <hostname> -u <db user> -p<db pw> <db name> < amazon_item_types.sql
+
+5) If you don’t already have an Amazon Professional account, go to
+   https://sellercentral.amazon.com and create a new account
+
+6) Go to https://developer.amazonservices.com
+
+7) Click on the "Sign up for MWS" button
+
+8) If you are not already logged in to Amazon Seller Central, log in with your
+   Amazon Professional account
+
+9) Select "I want to use an application to access my Amazon seller account with MWS"
+
+10) Enter "Inroads QuikWeb" in the "Application Name" field
+
+11) Enter "0536-5778-3158" in the "Application’s Developer Account Number" field
+
+12) Click the "Next" button
+
+13) Check both acceptance checkboxes and click the "Next" button
+
+14) On the completion page, copy the Merchant ID and paste it into the Merchant ID
+    field in the Amazon section of the Cart Config->Shopping tab.
+
+15) Set up the following cron job to sync with Amazon:
+
+0 * * * * cd /home/{domain}/public_html/admin/shopping/amazon; /usr/local/bin/php cmd.php
+
+Update Amazon Types and Item Types Tables
+=========================================
+
+Update $amazon_category_types in amazon-common.php:
+The amazon_category_types array should be updated periodically from the list of
+"Inventory File Templates" available from Amazon.  The index value is derived from
+the template filename.
+
+Update amazon_item_types.sql:
+Import from the Amazon Browse Tree Guide (BTG) at
+https://d1c723f3ouvz7y.cloudfront.net/US_btg.xlsx columns F and C
+

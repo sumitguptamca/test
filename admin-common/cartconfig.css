@@ -1,0 +1,127 @@
+/*
+             Inroads Shopping Cart - Admin Tab - Cart Config Style Sheet
+
+                        Written 2008-2019 by Randall Severy
+                         Copyright 2008-2019 Inroads, LLC
+*/
+
+.settings_tab { width: 80px; }
+.features_tab { width: 80px; }
+.options_tab { width: 80px; }
+.countries_tab { width: 80px; }
+.states_tab { width: 80px; }
+.shipping_tab { width: 80px; }
+.payment_tab { width: 80px; }
+
+.rates_tab { width: 80px; }
+.labels_tab { width: 80px; }
+
+.shipping_tab_row_middle { width: 404px; }
+
+.tab_section { width: 570px; }
+.subtab_section { width: 564px; }
+
+#settings_content td { padding-left: 5px; }
+#features_content td { padding-left: 5px; }
+#options_content td { padding-left: 5px; }
+#shipping_content table { margin-top: 2px; }
+#payment_content td { padding-left: 5px; }
+
+#rates_content td { padding-left: 5px; }
+#labels_content td { padding-left: 5px; }
+
+#countries_grid .aw-column-2 { text-align: center; }
+#countries_grid .aw-column-3 { text-align: right; }
+#countries_grid .aw-column-5 { text-align: center; }
+#countries_grid .aw-column-6 { text-align: center; }
+
+.country_links,.state_links {
+  padding-top: 10px;
+}
+
+.country_links a,.state_links a {
+  padding-right: 10px;
+}
+
+#states_grid .aw-column-1 { text-align: center; }
+#states_grid .aw-column-2 {
+  border-left: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+  border-right: 1px solid #888888;
+  text-align: right;
+}
+#states_grid .aw-column-3 {
+  border-bottom: 1px solid #888888;
+  border-right: 1px solid #888888;
+  text-align: right;
+}
+#states_grid .aw-column-5 { text-align: center; }
+#states_grid .aw-column-6 { text-align: center; }
+
+#cart_config .fieldtable {
+  width: 100%;
+}
+
+.config_flag_cell {
+  padding: 4px;
+  line-height: 1.6;
+  vertical-align: top;
+}
+
+.features_prompt {
+  padding-right: 10px;
+}
+
+.update_table_flags .prompt {
+  font-style: italic;
+}
+
+.update_table_flags div.perms_link {
+  display: inline;
+  padding-left: 10px;
+}
+
+div.update_table_flags {
+  padding-left: 17px;
+}
+
+.shipping_enabled td { line-height: 25px; }
+
+td.payment_section {
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 0px;
+}
+
+.payment_title {
+  position: relative;
+}
+
+#shopping_table .fieldprompt {
+  width: 150px;
+}
+
+td.shopping_section {
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 0px;
+}
+
+.shopping_title {
+  position: relative;
+}
+
+.shopping_flag {
+  font-weight: normal;
+  font-size: 12px;
+  position: absolute;
+  top: 2px;
+  left: 140px;
+}
+
+#analytics_table .fieldprompt {
+  width: 350px;
+}
+

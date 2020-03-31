@@ -1,0 +1,104 @@
+/*
+          Inroads Control Panel/Shopping Cart - Form HTML Export Output Style Sheet
+
+                        Written 2008-2010 by Randall Severy
+                         Copyright 2008-2010 Inroads, LLC
+*/
+
+.form_body {
+  margin: 50px 10px 10px 10px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.form_h1 {
+  font-size: 24px;
+  margin: 0px;
+  text-align: center;
+}
+
+.form_h2 {
+  font-size: 22px;
+  text-align: center;
+}
+
+.form_h3 {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0px;
+  text-align: center;
+}
+
+.form_logo {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.print_close_table {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+@media print { .print_close_table { display:none; }}
+
+a:link.print_close_links {
+  text-decoration:none;
+  font-size: 10px;
+  font-weight: normal;
+  font-family: Arial;
+  color: #0055A4;
+}
+a:visited.print_close_links {
+  text-decoration:none;
+  font-size: 10px;
+  font-weight: normal;
+  font-family: Arial;
+  color: #0055A4;
+}
+a:hover.print_close_links {
+  text-decoration:none;
+  font-size: 10px;
+  font-weight: normal;
+  font-family: Arial;
+  color: #0055A4;
+}
+
+.form_table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.form_header_row {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.form_header_row th {
+  font-size: 12px;
+  padding: 10px;
+  text-align: left;
+}
+
+.form_row td {
+  border: 1px solid #CCCCCC;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.form_row_odd {
+  background-color: #EEEEEE;
+}
+
+#creation_date_div {
+   display: inline;
+}
+
+#creation_date_div input {
+   margin-bottom: -7px;
+}
+
+#creation_date_div img {
+   margin-bottom: -5px;
+}
+

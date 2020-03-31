@@ -1,0 +1,14 @@
+#
+#        Inroads CartEngine Payment Module Setup Script
+#
+[Dirs]
+$DOCROOT/admin
+$DOCROOT/admin/payment
+
+[Files]
+payment/*,$DOCROOT/admin
+
+[Info]
+Product=Inroads CartEngine Payment Module
+ConfigFileNames=wsd.conf
+

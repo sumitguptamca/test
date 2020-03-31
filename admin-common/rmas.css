@@ -1,0 +1,208 @@
+/*
+                 Inroads Shopping Cart - RMAs Tab Style Sheet
+
+                     Written 2013-2016 by Randall Severy
+                      Copyright 2013-2016 Inroads, LLC
+*/
+
+#rmas_grid .aw-column-2 { text-align: center; }
+
+table.rma_layout_table {
+  width: 950px;
+}
+
+table.rma_layout_table table.fieldtable {
+  margin: 5px;
+  border: 0px !important;
+}
+
+table.rma_layout_table table.fieldtable tr {
+  height: 21px;
+}
+
+#order_info_table tr {
+  height: 16px;
+}
+
+.find_order_link {
+  color: #636466;
+  font-size: 12px;
+  font-family: Arial,Helvetica,sans-serif;
+  text-decoration: underline;
+}
+
+.section_title {
+  color: #0064A3;
+  font-size: 16px !important;
+  font-weight: bold;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.rma_item_title {
+  color: #0064A3;
+  font-size: 14px !important;
+  font-weight: bold;
+}
+
+.reason_details_div {
+  width: 200px;
+  max-height: 75px;
+  overflow: auto;
+}
+
+.return_address_div {
+  width: 200px;
+  max-height: 75px;
+  overflow: auto;
+}
+
+#comments {
+  width: 435px;
+}
+
+.short_comments_div {
+  width: 200px;
+  max-height: 75px;
+  overflow: auto;
+}
+
+#notes {
+  width: 435px;
+}
+
+.short_notes_div {
+  width: 200px;
+  max-height: 75px;
+  overflow: auto;
+}
+
+.item_table {
+  margin: 5px;
+}
+
+.item_table th {
+  font-size: 14px;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: normal;
+  color: #0064A3;
+  padding: 1px;
+  padding-top: 5px;
+  border-bottom: 1px solid #000000;
+}
+
+.item_table tr {
+  cursor: pointer;
+}
+
+.item_table td {
+  font-size: 12px;
+  font-family: Arial,Helvetica,sans-serif;
+  padding: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.add_edit_rma_box {
+  margin: 10px 0px 10px 0px;
+  padding: 5px;
+  border: 1px solid #DBDBDB;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  position: relative;
+  background: #FFFFFF;
+}
+
+.add_edit_rma_info_box {
+  width: 590px;
+}
+
+.add_edit_rma_address_box {
+  width: 320px;
+}
+
+.add_edit_rma_items_box {
+  width: 590px;
+}
+
+.add_edit_rma_order_info_box {
+  width: 320px;
+}
+
+.add_edit_rma_comments_box,.add_edit_rma_notes_box {
+  width: 440px;
+}
+
+.add_edit_rma_legend {
+  color: #666666;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0px 8px;
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  background: #FFFFFF;
+}
+
+.add_edit_rma_info_box td:nth-of-type(2) {
+  min-width: 190px;
+}
+
+.add_edit_rma_info_box select {
+  width: 170px;
+}
+
+.add_edit_rma_info_box textarea {
+  width: 100%;
+}
+
+.add_edit_rma_address_box select {
+  width: 206px;
+}
+
+.add_edit_rma_address_box input[type="text"] {
+  width: 204px;
+}
+
+.add_edit_rma_item_table th {
+  font-size: 12px;
+  text-align: center;
+}
+
+.add_edit_rma_product_table td input {
+  font-size: 12px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.add_edit_rma_comments textarea {
+  border: 0px !important;
+  font-size: 12px;
+}
+
+.attributes_div td {
+  border: 0px;
+}
+
+.attr_price {
+  padding-left: 10px;
+}
+
+.payment_div {
+  position: relative;
+}
+
+.delete_payment_div {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 12px;
+}
+
+@media print {
+  body { background: none !important; }
+  .bottom_buttons { display: none; }
+  .button_table { display: none; }
+  #contentArea1 { height: 100% !important; overflow: visible !important; }
+}
+

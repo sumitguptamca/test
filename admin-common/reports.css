@@ -1,0 +1,49 @@
+/*
+             Inroads Control Panel/Shopping Cart - Reports Tab Style Sheet
+
+                         Written 2012-2018 by Randall Severy
+                          Copyright 2012-2018 Inroads, LLC
+*/
+
+.admin_screen_body {
+  margin: 10px 0px 0px 0px;
+  padding: 0 10px 10px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.fieldprompt {
+  text-align: left;
+}
+
+.report_title_prompt {
+  padding-left: 15px;
+  display: inline;
+}
+
+.report_title {
+  display: inline;
+  font-weight: bold;
+}
+
+.report_options_cell {
+  padding-left: 20px;
+}
+
+.report_options_div {
+  border: 1px solid #7F9DB9;
+  padding: 10px;
+}
+
+label {
+  padding-right: 10px;
+}
+
+.range_select {
+  vertical-align: top;
+}
+
+#report_iframe {
+  border-top: 1px solid #9d9d9d;
+  margin-top: 7px;
+}
+

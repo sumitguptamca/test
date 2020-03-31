@@ -1,0 +1,21 @@
+/*
+               Inroads Control Panel/Shopping Cart - Image Style Sheet
+
+                         Written 2011 by Randall Severy
+                          Copyright 2011 Inroads, LLC
+*/
+
+.sample_image {
+  margin: 5px;
+  display: inline;
+  float: left;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.selected_sample_image {
+  border: 1px solid black;
+}
+
+#images_grid .aw-column-1 { text-align: center; }
+

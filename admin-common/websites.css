@@ -1,0 +1,68 @@
+/*
+          Inroads Control Panel/Shopping Cart - Web Sites Dialog Style Sheet
+
+                         Written 2017-2019 by Randall Severy
+                          Copyright 2017-2019 Inroads, LLC
+*/
+
+#settings_table {
+  width: 100%;
+}
+
+#website_table {
+  width: 100%;
+}
+
+#contact_table {
+  width: 100%;
+}
+
+#cartconfig_table {
+  width: 100%;
+}
+
+#catalogconfig_table {
+  width: 100%;
+}
+
+#payment_table {
+  width: 100%;
+}
+
+#analytics_table {
+  width: 100%;
+}
+
+td.payment_section {
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 0px;
+}
+
+.payment_title {
+  position: relative;
+}
+
+#payment_table td.fieldprompt {
+  width: 200px;
+}
+
+.payment_flag {
+  font-weight: normal;
+  font-size: 12px;
+  position: absolute;
+  top: 2px;
+  left: 212px;
+}
+
+#analytics_table .fieldprompt {
+  width: 350px;
+}
+
+.lookup_link {
+  font-size: 12px;
+  font-family: Arial,Helvetica,sans-serif;
+  color: #636466;
+}
+

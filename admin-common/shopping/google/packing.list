@@ -1,0 +1,31 @@
+#
+#         Inroads Shopping Cart - Google Shopping Module Setup Script
+#
+[Dirs]
+$DOCROOT/admin
+$DOCROOT/admin/shopping
+$DOCROOT/admin/shopping/google
+$DOCROOT/admin/upgrade
+
+[Files]
+shopping/*,$DOCROOT/admin
+installgoogle.php,$DOCROOT/admin/upgrade
+google.sql,$DOCROOT/admin/upgrade
+
+[Info]
+Product=Inroads Google Shopping Module 
+ConfigFileNames=wsd.conf
+$if WIN32
+PHPPrograms=C:\PROGRA~1\php\php.exe,C:\PHP\php.exe
+$else
+PHPPrograms=/usr/local/bin/php,/usr/bin/php
+$endif
+UpgradeProgram=$PHP $DOCROOT/admin/upgrade/installgoogle.php
+
+[DeleteFiles]
+$DOCROOT/admin/upgrade/installgoogle.php
+$DOCROOT/admin/upgrade/google.sql
+
+[DeleteDirs]
+$DOCROOT/admin/upgrade
+

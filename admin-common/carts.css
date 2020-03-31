@@ -1,0 +1,78 @@
+/*
+                Inroads Shopping Cart - Carts Screen Style Sheet
+
+                        Written 2009-2018 by Randall Severy
+                         Copyright 2009-2018 Inroads, LLC
+*/
+
+.cart_tab { width: 80px; }
+.items_tab { width: 80px; }
+.comments_tab { width: 120px; }
+
+.tab_section { width: 530px; }
+.update_tab_row_middle { width: 250px; }
+.add_tab_row_middle { width: 450px; }
+
+#cart_table {
+  width: 100%;
+}
+
+#comments_table {
+  width: 100%;
+}
+
+table.fieldtable {
+  margin: 5px;
+}
+
+.section_title {
+  color: #0064A3;
+  font-size: 16px !important;
+  font-weight: bold;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.cart_item_title {
+  font-size: 14px !important;
+  font-weight: bold;
+}
+
+.comments_div {
+  width: 450px;
+  max-height: 75px;
+  overflow: auto;
+}
+
+.short_comments_div {
+  width: 200px;
+  max-height: 75px;
+  overflow: auto;
+}
+
+.item_table {
+  margin: 5px;
+}
+
+.item_table th {
+  font-size: 14px;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  color: #0064A3;
+  padding: 1px;
+  padding-top: 5px;
+  border-bottom: 1px solid #000000;
+}
+
+.item_table tr {
+  cursor: pointer;
+}
+
+.item_table td {
+  font-size: 12px;
+  font-family: Arial,Helvetica,sans-serif;
+  padding: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #CCCCCC;
+}
+

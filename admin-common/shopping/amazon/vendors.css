@@ -1,0 +1,26 @@
+/*
+             Inroads Shopping Cart - Amazon Vendor Style Sheet
+
+                           Written 2018 by Randall Severy
+                            Copyright 2018 Inroads, LLC
+*/
+
+.select_shopping_input {
+  width: 220px;
+}
+
+span.select_shopping_input {
+  display: inline-block;
+}
+
+.select_shopping_button {
+  font-size: 11px;
+  height: 22px;
+  width: 100px;
+  padding-bottom: 1px;
+}
+
+.add_edit_import_table select#amazon_type {
+  width: 355px;
+}
+

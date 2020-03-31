@@ -1,0 +1,25 @@
+Installation of Shopzilla Module
+================================
+
+1) Upload shopping/shopzilla.php to admin/shopping directory
+
+2) Upload shopping/shopzilla/feed.php, to the admin/shopping/shopzilla
+   directory
+
+3) Import Shopzilla tables and fields with:
+
+mysql -h <hostname> -u <db user> -p<db pw> <db name> < shopzilla.sql
+
+4) Go to http://www.shopzilla.com
+
+5) Click on the "Merchant Login" link in the footer
+
+6) Log in with a valid ShopZilla account or create a new account
+
+7) Click on the "Manage Listings" tab
+
+8) Click on the "Submit & Update Your Product Listings Datafeed" link
+
+9) Send the following URL by e-mail to support@shopzilla.com with the ShopZilla Merchant ID:
+   http://www.domain.com/admin/shopping/shopzilla/feed.php
+

@@ -1,0 +1,35 @@
+/*
+         Inroads Control Panel/Shopping Cart - Admin Tab - Admin Users Style Sheet
+
+                         Written 2012-2017 by Randall Severy
+                          Copyright 2012-2017 Inroads, LLC
+*/
+
+.info_tab { width: 80px; }
+.perms_tab { width: 100px; }
+.prefs_tab { width: 100px; }
+.accounts_tab { width: 80px; }
+.tab_section { width: 350px; }
+.tab_row_middle_cell { width: 100%; }
+.tab_content { padding-left: 5px; }
+
+#users_grid .aw-column-4 { text-align: center; }
+
+.admin_screen_body {
+  margin: 10px 0px 0px 0px;
+  padding: 0 10px 10px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+#grant_permission p {
+  margin: 5px 0px 10px 0px;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+#grant_permission .buttonwrapper {
+  display: inline-block;
+  width: auto;
+}
+

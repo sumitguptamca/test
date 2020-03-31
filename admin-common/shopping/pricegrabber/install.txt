@@ -1,0 +1,35 @@
+Installation of PriceGrabber Module
+===================================
+
+1) Upload shopping/pricegrabber.php to admin/shopping directory
+
+2) Upload shopping/pricegrabber/feed.php, to the admin/shopping/pricegrabber
+   directory
+
+3) Import PriceGrabber tables and fields with:
+
+mysql -h <hostname> -u <db user> -p<db pw> <db name> < pricegrabber.sql
+
+4) Go to http://www.pricegrabber.com
+
+5) Click on the "Merchant Login" link in the footer
+
+6) Log in with a valid PriceGrabber account or create a new account
+
+7) Click on the "Your Account" menu item
+
+8) Update the Account information sections as fully as possible
+
+9) Click on the "Feed Format" sub-menu item
+
+10) Select the product type and choose "Yes" for "Do you have a product data feed?"
+
+11) Select "Yes" for "Is the feed visible from a website / URL?"
+
+12) Enter the following URL into the URL field:
+    http://www.domain.com/admin/shopping/pricegrabber/feed.php/pricegrabber.csv
+
+13) Select "No" for "Is this feed password-protected?"
+
+14) Click on the "Save Changes" button
+

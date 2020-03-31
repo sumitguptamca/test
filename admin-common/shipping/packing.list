@@ -1,0 +1,14 @@
+#
+#        Inroads CartEngine Shipping Module Setup Script
+#
+[Dirs]
+$DOCROOT/admin
+$DOCROOT/admin/shipping
+
+[Files]
+shipping/*,$DOCROOT/admin
+
+[Info]
+Product=Inroads CartEngine Shipping Module
+ConfigFileNames=wsd.conf
+

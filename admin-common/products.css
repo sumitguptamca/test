@@ -1,0 +1,332 @@
+/*
+                Inroads Shopping Cart - Products Tab Style Sheet
+
+                        Written 2008-2019 by Randall Severy
+                         Copyright 2008-2019 Inroads, LLC
+*/
+
+.prod_product_tab { width: 65px; }
+.prod_specs_tab { width: 65px; }
+.prod_shopping_tab { width: 75px; }
+.prod_image_tab { width: 65px; }
+.prod_attributes_tab { width: 75px; }
+.prod_inventory_tab { width: 70px; }
+.prod_qtydiscounts_tab { width: 100px; }
+.prod_pricebreaks_tab { width: 90px; }
+.prod_categories_tab { width: 80px; }
+.prod_related_tab { width: 120px; }
+.prod_subproducts_tab { width: 95px; }
+.prod_seo_tab { width: 50px; }
+
+.prod_tab_section { width: 690px; }
+.tab_row_middle_cell { width: 100%; }
+
+#inventory_grid .aw-grid-cell {
+  border-right: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+}
+.aw-strict #inventory_grid .aw-grid-row { padding-bottom: 5px; }
+#inventory_grid .aw-alternate-even { background: #FFFFFF; }
+#inventory_grid .aw-alternate-odd { background: #FFFFFF; }
+#inventory_grid .aw-mouseover-row { color: #000000; background: #FFFFFF; }
+#inventory_grid .aw-rows-selected { color: #000000; background: #FFFFFF; }
+
+#reviews_grid .aw-column-1 { text-align: center; }
+#reviews_grid .aw-column-2 { text-align: center; }
+#reviews_grid .aw-column-7 { text-align: center; }
+
+div.filter select {
+  width: 150px;
+}
+
+#product_table {
+  width: 100%;
+}
+
+#product_table .fieldprompt {
+  width: 140px;
+}
+
+input.discount {
+  text-align: right;
+}
+
+#specs_table {
+  width: 100%;
+}
+
+#pricebreaks_table {
+  width: 100%;
+}
+
+#pricebreaks_table .fieldprompt {
+  width: 65px;
+}
+
+#shopping_table {
+  width: 100%;
+}
+
+#seo_table {
+  width: 100%;
+}
+
+#seo_table .fieldprompt {
+  width: 140px;
+}
+
+#popular_table {
+  width: 100%;
+}
+
+#popular_table th {
+  color: #0064A3;
+  font-size: 14px;
+}
+
+td.shopping_section {
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.shopping_title {
+  position: relative;
+}
+
+.shopping_flag {
+  font-weight: normal;
+  font-size: 12px;
+  position: absolute;
+  top: 2px;
+  left: 160px;
+}
+
+.select_shopping_input {
+  width: 450px;
+}
+
+span.select_shopping_input {
+  display: inline-block;
+}
+
+.select_shopping_button {
+  font-size: 11px;
+  height: 22px;
+  width: 130px;
+  padding-bottom: 1px;
+}
+
+.shopzilla_link {
+  color: #0064A3;
+}
+
+.view_link {
+  color: #0064A3;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.previous_link {
+  color: #0064A3;
+  font-size: 12px;
+  position: absolute;
+  bottom: 30px;
+  left: -142px;
+}
+
+.next_link {
+  color: #0064A3;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0px;
+  left: -125px;
+}
+
+table.editmultiple {
+  border-collapse: collapse;
+}
+
+table.editmultiple th {
+  background-color: #CCCCCC;
+  border: 1px solid #CCCCCC;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13px;
+}
+
+table.editmultiple td {
+  border: 1px solid #CCCCCC;
+}
+
+div.sample_image img {
+  max-width: 100px;
+}
+
+div.select_image_div {
+  min-height: 100px;
+}
+
+.seo_category {
+  max-width: 412px;
+}
+
+label {
+  padding-right: 5px;
+}
+
+.innerprompt {
+  padding-left: 10px;
+  vertical-align: middle;
+}
+
+.edit_multiple_fields {
+  margin-top: 7px;
+  height: 200px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+#edit_inventory_table {
+  width: 100%;
+}
+
+table.linked_inventory {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.linked_inventory th {
+  background-color: #F8F8F8;
+  border: 1px solid #CCCCCC;
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+}
+
+table.linked_inventory td {
+  border: 1px solid #CCCCCC;
+}
+
+#inv_links_grid .aw-column-3 { text-align: center; }
+
+#common_rule_selector {
+  width: 100%;
+  font-size: 14px;
+}
+
+#match_products_dialog .dialogSection .fieldprompt {
+  font-size: 0.75rem;
+}
+
+
+#matching_products_div img.ajax-loader {
+  top: 30%;
+  left: 50%;
+  position: absolute;
+  width: 100px;
+}
+
+.products_matching_grid {
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-size: 13px;
+}
+
+.products_matching_grid thead td {
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 2px;
+  font-weight: bold;
+  background: #f5f5f5;
+}
+
+.products_matching_grid tbody td {
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  padding: 2px;
+}
+
+/*.products_matching_grid tbody tr:nth-child(4n + 1),
+.products_matching_grid tbody tr:nth-child(4n + 2)
+{
+  background: #efefef;
+}*/
+
+.products_matching_grid tbody tr.gray-line {
+  background: #efefef;
+}
+
+.width-120 {
+  width: 120px;
+}
+
+.dm_product_last_update {
+  width: 140px;
+}
+
+.pagination_section {
+  position: fixed;
+  bottom: 25px;
+  font-size: 14px;
+}
+
+ul.pagination {
+  display: inline-block;
+  list-style: none;
+  padding-top: 10px;
+}
+
+ul.pagination .page-item {
+  color: black;
+  float: left;
+  padding-right: 4px;
+}
+
+ul.pagination .page-item span {
+  color: #ddd;
+}
+
+ul.pagination .page-item a {
+  border-top: none!important;
+}
+
+ul.pagination .page-item a span {
+  color: black;
+  text-decoration: underline;
+}
+
+#total_duplicated_lines_count {
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+#duplicated_products_search_row {
+  padding-top: 25px;
+}
+
+#duplicated_products_search_row input.search_input {
+   position: relative;
+   top: 0;
+   left: 0;
+   margin: 0;
+}
+
+#duplicated_products_search_row span.search_button,
+#duplicated_products_search_row .search_reset {
+  cursor: pointer;
+  position: relative;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: underline;
+  top: 3px;
+}
+
+#duplicated_products_search_row span.search_button {
+  float: left;
+}
+
+#duplicated_products_search_row .search_reset {
+  float: right;
+}
+

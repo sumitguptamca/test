@@ -1,0 +1,221 @@
+Admin Screens:
+
+Admin Users
+System Config
+Cart Config
+Import Data
+Export Data
+CMS
+Technical Support
+Site Config
+Analytics
+Logout
+Countries & States
+Add User
+Edit User
+Delete User
+Add User
+Export
+Import
+Close
+Update
+Cancel
+
+Attributes Screens:
+
+Add Attribute
+Edit Attribute
+Delete Attribute
+Add Option
+Edit Option
+Delete Option
+Add Attribute
+Add Option
+Update
+Cancel
+
+Cart Config Screens:
+
+Add Country
+Edit Country
+Delete Country
+Add Value
+Edit Value
+Delete Value
+Add Cart Option
+Add Country
+Update
+Cancel
+
+Carts Screens:
+
+View Cart
+Submit Order
+Edit Cart
+Delete Cart
+Add Item
+Edit Item
+Delete Item
+Add
+Close
+Update
+Cancel
+
+Categories Screens:
+
+Add Category
+Edit Category
+Delete Category
+New Subcategory
+New Category
+New Product
+Set Price Breaks
+Update
+Cancel
+
+Coupons Screens:
+
+Add Coupon
+Edit Coupon
+Delete Coupon
+Add Coupon
+Update
+Cancel
+
+Customers Screens:
+
+Add Customer
+Edit Customer
+Delete Customer
+Add Shipping
+Edit Shipping
+Delete Shipping
+View Order
+Add Customer
+Add Address
+Update
+Cancel
+
+Forms Screens:
+
+Export Data
+Edit Data
+Edit Entry
+Delete Entry
+Return
+
+Image Screens:
+
+Add Image
+Edit Image
+Delete Image
+Update
+Cancel
+
+Orders Screens:
+
+Pending Carts
+View Order
+Edit Order
+Delete Order
+Print Invoice
+Packing Slip
+Shipping Label
+Cancel Shipment
+Add Item
+Edit Item
+Delete Item
+Add
+Update
+Cancel
+
+Products Screens:
+
+Add Product
+Edit Product
+Delete Product
+New Category
+New Product
+Add Product
+Add Price
+Delete Price
+Set Price Breaks
+Add Inventory
+Delete Inventory
+Update
+Cancel
+
+Reports Screens:
+
+Run Report
+
+Template Screens:
+
+Edit Template
+Add Attachment
+Delete Attachment
+Close
+Cancel
+
+Clients Screens (Inroads):
+
+Add Client
+Edit Client
+Delete Client
+Update
+Cancel
+
+Franchise Screens (Omex):
+
+Add Franchise
+Edit Franchise
+Delete Franchise
+Update
+Cancel
+
+Work Order Screens (Omex):
+
+View Work Order
+Edit Work Order
+Delete Work Order
+Update
+Cancel
+
+Highest Price 4 Gold:
+
+Inbound Label
+DAZzle Export
+
+Ohr-O'Keefe:
+
+Calender Config
+
+Western Dental Order Entry System:
+
+Export Order
+Add Location
+Edit Location
+Delete Location
+
+Cozy Petal:
+
+Blog
+
+SkyLinked:
+
+Add Partner
+Edit Partner
+Delete Partner
+Get Public Key
+Add Partner
+Add Pilot
+Edit Pilot
+Delete Pilot
+Login as Pilot
+Add Aircraft
+Edit Aircraft
+Delete Aircraft
+Add Pilot
+Update
+Cancel
+

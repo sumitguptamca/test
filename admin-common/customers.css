@@ -1,0 +1,61 @@
+/*
+               Inroads Shopping Cart - Customers Tab Style Sheet
+
+                        Written 2008-2018 by Randall Severy
+                         Copyright 2008-2018 Inroads, LLC
+*/
+
+.customer_tab { width: 80px; }
+.billing_tab { width: 80px; }
+.shipping_tab { width: 80px; }
+.history_tab { width: 80px; }
+
+.tab_section { width: 515px; }
+.tab_row_middle_cell { width: 100%; }
+
+#activity_grid .aw-column-1 { text-align: center; }
+
+#customer_notices_grid .aw-column-2 { text-align: center; }
+#customer_notices_grid .aw-column-3 { text-align: center; }
+#customer_notices_grid .aw-column-4 { text-align: center; }
+
+.filter_select {
+  width: 148px;
+}
+
+.filter label {
+  vertical-align: middle;
+}
+
+#customer_table {
+  width: 100%;
+}
+
+#billing_table {
+  width: 100%;
+}
+
+#accounts_table {
+  width: 100%;
+}
+
+#notice_table {
+  width: 100%;
+}
+
+#notice_table .fieldprompt {
+  width: 75px;
+}
+
+#views_table {
+  width: 100%;
+  padding-top: 0px;
+}
+
+.views_label {
+  display: inline-block;
+  padding-top: 8px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+}

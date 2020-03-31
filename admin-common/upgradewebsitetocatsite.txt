@@ -1,0 +1,60 @@
+
+Upgrade Web Site to Catalog Site
+================================
+
+1) Add the following entries to admin/config.php:
+
+     $image_dir = $docroot."/images";
+     $file_dir = $docroot."/files";
+     $file_url = "/files";
+     $category_cookie = "CustomerCategory";
+     $top_category = 1;
+
+2) Add the following entries to admin/colors.css:
+
+     .categories_tab { width: 78px; }
+     .products_tab { width: 68px; }
+
+3) Merge or Upload catsite/admin/custom-config.php
+
+4) Add the following tables to database:
+
+     categories
+     subcategories
+     category_products
+     products
+     related_products
+     sub_products
+     product_data
+     images
+
+5) Create the following directories:
+
+     $DOCROOT/images/original
+     $DOCROOT/images/zoom
+     $DOCROOT/images/large
+     $DOCROOT/images/medium
+     $DOCROOT/images/small
+     $DOCROOT/files
+
+6) Upload the following files from catsite:
+
+     display-category.php
+     display-product.php
+     include/catalog_instructions.html
+     include/CompareProducts.class.php
+     include/display-include-custom-template.php
+     include/display-include.php
+     include/DisplayCatalog.class.php
+     include/Template.class.php
+     js/display-product.js
+     js/display-category.js
+
+7) Install the Catalog Admin files:
+
+     ./httpupgrade <CMS url>/upgrade severy nop encoded-catadmin-install noreplace
+
+8) Update user permissions:
+
+     update users set perms=perms|1536;
+

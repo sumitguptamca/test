@@ -1,0 +1,139 @@
+
+OSCommerce to Inroads Shopping Cart Database Conversion
+-------------------------------------------------------
+
+admin => users
+--------------
+admin_email_address => username
+admin_firstname => firstname
+admin_lastname => lastname
+
+update users set password='initialpassword' where isnull(password);
+update users set email=username where isnull(email);
+update users set perms=524287 where isnull(perms);
+update users set creation_date=unix_timestamp() where isnull(creation_date);
+update users set modified_date=unix_timestamp() where isnull(creation_date);
+
+Add /syncusers option to adminusers.php module to sync new users to CMS
+
+
+customers => customers
+----------------------
+customers_id => id
+customers_firstname => fname
+customers_lastname => lname
+customers_email_address => email
+customers_password => password
+customers_newsletter => mailing
+
+customers_info => customers
+---------------------------
+customers_info_id => id (Key)
+customers_info_date_account_created => create_date (convert from datetime field)
+
+update customers set ip_address='70.86.182.194';
+
+customers => billing_information
+--------------------------------
+customers_id => parent
+customers_telephone => phone
+customers_fax => fax
+
+address_book => customers
+-------------------------
+customers_id => id (Key)
+entry_company => company
+
+address_book => billing_information
+-----------------------------------
+customers_id => parent (Key)
+entry_street_address => address1
+entry_suburb => address2
+entry_postcode => zipcode
+entry_city => city
+entry_state => state
+entry_country_id => country
+
+Map entry_zone_id to state using zones table
+
+update billing_information set country=1 where country=223;
+
+address_book => shipping_information
+-----------------------------------
+customers_id => parent
+entry_company => company
+entry_street_address => address1
+entry_suburb => address2
+entry_postcode => zipcode
+entry_city => city
+entry_state => state
+entry_country_id => country
+
+update shipping_information set profilename='Default';
+update shipping_information set country=1 where country=223;
+update shipping_information set default_flag = 1;
+
+Map entry_zone_id to state using zones table
+
+
+categories => categories
+------------------------
+categories_id => id
+categories_status => status
+
+update categories set status=0 where status=1;
+
+categories => images  (type = Category)
+--------------------
+categories_id => parent
+categories_image => filename
+
+categories_description => categories
+------------------------------------
+categories_id => id (Key)
+categories_name => name
+categories_description => short_description
+categories_head_title_tag => seo_title
+categories_head_desc_tag => seo_description
+categories_head_keywords_tag => seo_keywords
+
+categories => subcategories
+---------------------------
+categories_id => related_id
+parent_id => parent
+
+products => products
+--------------------
+products_id => id
+products_status => status
+
+update products set status=0 where status=1;
+
+products => product_inventory
+-----------------------------
+products_id => parent
+products_quantity => qty
+products_model => part_number
+products_price => price
+products_weight => weight
+
+products => images  (type = Product)
+------------------
+products_id => parent
+products_image => filename
+
+products_description => products
+--------------------------------
+products_id => id (Key)
+products_name => name
+products_description => short_description
+products_head_title_tag => seo_title
+products_head_desc_tag => seo_description
+products_head_keywords_tag => seo_keywords
+
+products_to_categories => category_products
+-------------------------------------------
+products_id => related_id
+categories_id => parent
+
+

@@ -1,0 +1,182 @@
+/*
+            Inroads Control Panel/Shopping Cart - Ticket Dialog Style Sheet
+
+                          Written 2012-2014 by Randall Severy
+                           Copyright 2012-2014 Inroads, LLC
+*/
+
+.qq-uploader {
+  width: 450px;
+}
+
+.qq-drop-label {
+  position: absolute;
+  top: 3px;
+  left: 100px;
+  color: #636466;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.qq-upload-drop-area span {
+  margin-top: -10px;
+}
+
+.qq-upload-button {
+  color: #636466;
+  font-size: 12px;
+  font-weight: bold;
+  width: 90px;
+  padding: 3px 0px;
+  background: #FFFFFF;
+  border: 1px solid #7F9DB9;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.qq-upload-list {
+  margin: 0px;
+  list-style: none;
+}
+
+.qq-upload-list li {
+  margin-top: 4px;
+}
+
+.qq-upload-drop-area {
+  color: #636466;
+  font-size: 12px;
+  font-weight: bold;
+  height: 23px;
+  min-height: 23px;
+  background: #C9CBCD;
+}
+
+.qq-upload-spinner {
+  background: url("images/loading.gif");
+}
+
+.qq-upload-file a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.qq-upload-file a:hover {
+  text-decoration: underline;
+}
+
+.qq-delete-file a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.qq-delete-file a:hover {
+  text-decoration: underline;
+}
+
+.approve_button {
+  display: inline;
+  text-align: center;
+  color: #636466;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 15px;
+  background: #FFFFFF;
+  border: 1px solid #7F9DB9;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  cursor: pointer;
+}
+
+.reopen_button {
+  display: inline;
+  text-align: center;
+  color: #636466;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px 15px;
+  background: #FFFFFF;
+  border: 1px solid #7F9DB9;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  cursor: pointer;
+}
+
+.add_comment_button {
+  text-align: center;
+  color: #636466;
+  font-size: 12px;
+  font-weight: bold;
+  width: 110px;
+  padding: 3px 0px;
+  background: #FFFFFF;
+  border: 1px solid #7F9DB9;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  cursor: pointer;
+}
+
+.status_note {
+  font-style: italic;
+  margin-bottom: 6px;
+}
+
+.button_div {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.button_table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td.view_actions {
+  border: 1px solid #999999;
+  text-align: center;
+  padding: 0px 20px;
+  font-size: 14px;
+}
+
+.view_actions a {
+  color: #636466;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.view_actions a:hover {
+  color: #0065A4;
+}
+
+@media screen {
+  .header_div { display: none; }
+}
+
+@media print {
+  body { background: none !important; }
+  .bottom_buttons { display: none; }
+  .button_table { display: none; }
+  .qq-upload-button { display: none; }
+  .qq-drop-label { display: none; }
+  .qq-delete-file { display: none; }
+  .header_div { width: 100%; text-align: center; }
+  .header_div h1 { font-size: 18px; }
+  #contentArea1 { height: 100% !important; overflow: visible !important; }
+  #fieldtable.fieldtable { border: none; }
+}
+
+#support_grid .aw-column-1 { text-align: center; }
+#support_grid .aw-column-2 { text-align: center; }
+#support_grid .aw-column-3 { text-align: center; }
+#support_grid .aw-column-8 { text-align: center; }
+
+#punchlist_grid .aw-column-1 { text-align: center; }
+#punchlist_grid .aw-column-2 { text-align: center; }
+#punchlist_grid .aw-column-7 { text-align: center; }
+

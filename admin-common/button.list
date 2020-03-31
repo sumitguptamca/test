@@ -1,0 +1,210 @@
+admin.php	 Admin Users	 images/AdminUsers.png	 admin_users
+admin.php	 System Config	 images/AdminUsers.png	 system_config
+admin.php	 Cart Config	 images/AdminUsers.png	 cart_config
+admin.php	 Import Data	 images/ImportData.png	 import_data
+admin.php	 Export Data	 images/ImportData.png	 export_data
+admin.php	 Technical Support	 images/AdminUsers.png	 open_tickets
+admin.php	 Site Config	 images/AdminUsers.png	 open_cpanel
+admin.php	 Analytics	 images/AdminUsers.png	 open_google
+admin.php	 Punch List	 images/PunchList.png	 punch_list
+admin.php	 CMS	 images/AdminUsers.png	 launch_cms
+admin.php	 Logout	 images/Update.png	 logout
+admin.php	 Update	 images/Update.png	 update_config
+admin.php	 Cancel	 images/Update.png	 close_system_config
+admin.php	 Manage Images	 images/AdminUsers.png
+admin.php	 Update Images	 images/EditUser.png
+admin.php	 Manage Images	 images/AdminUsers.png
+admin.php	 Update Images	 images/EditUser.png
+admin.php	 Add Country	 images/AddUser.png
+admin.php	 Edit Country	 images/EditUser.png
+admin.php	 Delete Country	 images/DeleteUser.png
+adminusers.php	 Add User	 images/AddUser.png	 add_user
+adminusers.php	 Edit User	 images/EditUser.png	 edit_user
+adminusers.php	 Delete User	 images/DeleteUser.png	 delete_user
+adminusers.php	 Close	 images/Update.png	 top.close_current_dialog
+adminusers.php	 Add User	 images/AddUser.png	 process_add_user
+adminusers.php	 Cancel	 images/Update.png	 top.close_current_dialog
+adminusers.php	 Update	 images/Update.png	 update_user
+adminusers.php	 Cancel	 images/Update.png	 top.close_current_dialog
+attributes.php	 Add Attribute	 images/AddAttribute.png	 add_attribute
+attributes.php	 Edit Attribute	 images/EditAttribute.png	 edit_attribute
+attributes.php	 Delete Attribute	 images/DeleteAttribute.png	 delete_attribute
+attributes.php	 Add Option	 images/AddOption.png
+attributes.php	 Edit Option	 images/EditOption.png
+attributes.php	 Delete Option	 images/DeleteOption.png
+attributes.php	 Add Attribute	 images/AddAttribute.png	 process_add_attribute
+attributes.php	 Cancel	 images/Update.png	 top.close_current_dialog
+attributes.php	 Update	 images/Update.png	 update_attribute
+attributes.php	 Cancel	 images/Update.png	 top.close_current_dialog
+attributes.php	 Add Option	 images/AddOption.png	 process_add_option
+attributes.php	 Cancel	 images/Update.png	 top.close_current_dialog
+attributes.php	 Update	 images/Update.png	 update_option
+attributes.php	 Cancel	 images/Update.png	 top.close_current_dialog
+cartconfig.php	 Update	 images/Update.png	 update_cart_config
+cartconfig.php	 Cancel	 images/Update.png	 top.close_current_dialog
+cartconfig.php	 Add Country	 images/AddUser.png
+cartconfig.php	 Edit Country	 images/EditUser.png
+cartconfig.php	 Delete Country	 images/DeleteUser.png
+cartconfig.php	 Add Value	 images/AddUser.png
+cartconfig.php	 Edit Value	 images/EditUser.png
+cartconfig.php	 Delete Value	 images/DeleteUser.png
+cartconfig.php	 Add Cart Option	 images/AddOption.png
+cartconfig.php	 Cancel	 images/Update.png	 top.close_current_dialog
+cartconfig.php	 Update	 images/Update.png	 update_cart_option
+cartconfig.php	 Cancel	 images/Update.png	 top.close_current_dialog
+cartconfig.php	 Add Country	 images/AddOption.png	 process_add_country
+cartconfig.php	 Cancel	 images/Update.png	 top.close_current_dialog
+cartconfig.php	 Update	 images/Update.png	 update_country
+cartconfig.php	 Cancel	 images/Update.png	 top.close_current_dialog
+carts.php	 View Cart	 images/ViewOrder.png	 view_cart
+carts.php	 Submit Order	 images/AdminUsers.png	 submit_order
+carts.php	 Edit Cart	 images/EditOrder.png	 edit_cart
+carts.php	 Delete Cart	 images/DeleteOrder.png	 delete_cart
+carts.php	 Close	 images/Update.png	 close_pending_carts
+carts.php	 Add Item	 images/AddProduct.png
+carts.php	 Edit Item	 images/EditProduct.png
+carts.php	 Delete Item	 images/DeleteProduct.png
+carts.php	 Add	 images/AddOrder.png	 process_add_cart
+carts.php	 Cancel	 images/Update.png	 top.close_current_dialog
+carts.php	 Update	 images/Update.png	 update_cart
+carts.php	 Cancel	 images/Update.png	 top.close_current_dialog
+carts.php	 Add Item	 images/AddProduct.png	 process_add_cart_item
+carts.php	 Cancel	 images/Update.png	 top.close_current_dialog
+carts.php	 Update	 images/Update.png	 update_cart_item
+carts.php	 Cancel	 images/Update.png	 top.close_current_dialog
+categories.php	 Add Category	 images/AddCategory.png
+categories.php	 Edit Category	 images/EditCategory.png
+categories.php	 Delete Category	 images/DeleteCategory.png
+categories.php	 Rebuild Cache	 images/AdminUsers.png
+categories.php	 New Subcategory	 images/AddCategory.png
+categories.php	 New Category	 images/AddCategory.png
+categories.php	 New Product	 images/AddProduct.png
+categories.php	 Set Price Breaks	 images/AddProduct.png
+categories.php	 Add Category	 images/AddCategory.png
+categories.php	 Cancel	 images/Update.png
+categories.php	 Update	 images/Update.png	 update_category
+categories.php	 Cancel	 images/Update.png
+coupons.php	 Add Coupon	 images/AddCoupon.png	 add_coupon
+coupons.php	 Edit Coupon	 images/EditCoupon.png	 edit_coupon
+coupons.php	 Delete Coupon	 images/DeleteCoupon.png	 delete_coupon
+coupons.php	 Add Coupon	 images/AddCoupon.png	 process_add_coupon
+coupons.php	 Cancel	 images/Update.png	 top.close_current_dialog
+coupons.php	 Update	 images/Update.png	 update_coupon
+coupons.php	 Cancel	 images/Update.png	 top.close_current_dialog
+customers.php	 Add Customer	 images/AddCustomer.png	 add_customer
+customers.php	 Edit Customer	 images/EditCustomer.png	 edit_customer
+customers.php	 Delete Customer	 images/DeleteCustomer.png	 delete_customer
+customers.php	 Add Shipping	 images/AddImage.png
+customers.php	 Edit Shipping	 images/EditImage.png
+customers.php	 Delete Shipping	 images/DeleteImage.png
+customers.php	 View Order	 images/ViewOrder.png	 view_order
+customers.php	 Add Customer	 images/AddCustomer.png	 process_add_customer
+customers.php	 Cancel	 images/Update.png	 top.close_current_dialog
+customers.php	 Update	 images/Update.png	 update_customer
+customers.php	 Cancel	 images/Update.png	 top.close_current_dialog
+customers.php	 Add Address	 images/AddCustomer.png	 process_add_shipping
+customers.php	 Cancel	 images/Update.png	 top.close_current_dialog
+customers.php	 Update	 images/Update.png	 update_shipping
+customers.php	 Cancel	 images/Update.png	 top.close_current_dialog
+customers.php	 Select	 images/Update.png	 select_customer
+customers.php	 Cancel	 images/Update.png	 top.close_current_dialog
+exportdata.php	 Export	 images/Import.png	 process_export
+exportdata.php	 Cancel	 images/Update.png	 top.close_current_dialog
+forms.php	 Export Data	 images/RunReport.png	 export_data
+forms.php	 Edit Data	 images/EditUser.png	 edit_data
+forms.php	 View Entry	 images/ViewEntry.png	 view_entry
+forms.php	 Add Entry	 images/AddEntry.png	 add_entry
+forms.php	 Edit Entry	 images/EditEntry.png	 edit_entry
+forms.php	 Delete Entry	 images/DeleteEntry.png	 delete_entry
+forms.php	 Return	 images/Update.png	 top.close_current_dialog
+forms.php	 Add Entry	 images/AddEntry.png	 process_add_entry
+forms.php	 Cancel	 images/Update.png	 top.close_current_dialog
+forms.php	 Update	 images/Update.png	 update_entry
+forms.php	 Cancel	 images/Update.png	 top.close_current_dialog
+image.php	 Add Image	 images/AddImage.png
+image.php	 Upload Images	 images/UploadImages.png
+image.php	 Edit Image	 images/EditImage.png
+image.php	 else Edit Image	 images/EditImage.png
+image.php	 Delete Image	 images/DeleteImage.png
+image.php	 Add Image	 images/AddImage.png	 process_add_image
+image.php	 Cancel	 images/Update.png	 top.close_current_dialog
+image.php	 Update	 images/Update.png	 update_image
+image.php	 Cancel	 images/Update.png	 top.close_current_dialog
+importdata.php	 Import	 images/Import.png	 process_import
+importdata.php	 Cancel	 images/Update.png	 top.close_current_dialog
+inventory.php	 Add Inventory	 images/AddInventory.png
+inventory.php	 Delete Inventory	 images/DeleteInventory.png
+opencomm.php	 Add Department	 images/AddUser.png	 add_department
+opencomm.php	 Edit Department	 images/EditUser.png	 edit_department
+opencomm.php	 Delete Department	 images/DeleteUser.png	 delete_department
+opencomm.php	 Close	 images/Update.png	 top.close_current_dialog
+opencomm.php	 Assign Number	 images/Update.png
+opencomm.php	 Import Account	 images/AddUser.png	 import_gvoice
+opencomm.php	 Close	 images/Update.png	 top.close_current_dialog
+opencomm.php	 Update	 images/AddUser.png	 process_import_gvoice
+opencomm.php	 Cancel	 images/Update.png	 top.close_current_dialog
+opencomm.php	 Add Number	 images/AddUser.png	 add_forwarding
+opencomm.php	 Edit Number	 images/EditUser.png	 update_forwarding
+opencomm.php	 Delete Number	 images/DeleteUser.png	 delete_forwarding
+opencomm.php	 Update	 images/Update.png	 update_department_options
+opencomm.php	 Close	 images/Update.png	 top.close_current_dialog
+orders.php	 New Order	 images/AddOrder.png	 add_order
+orders.php	 Edit Order	 images/EditOrder.png	 edit_order
+orders.php	 Delete Order	 images/DeleteOrder.png	 delete_order
+orders.php	 View Order	 images/ViewOrder.png	 view_order
+orders.php	 Print Invoice	 images/ViewOrder.png	 print_invoice
+orders.php	 Packing Slip	 images/ViewOrder.png	 packing_slip
+orders.php	 Shipping Label	 images/ViewOrder.png	 shipping_label
+orders.php	 Cancel Shipment	 images/ViewOrder.png	 cancel_shipment
+orders.php	 Pending Carts	 images/AdminUsers.png	 pending_carts
+orders.php	 Add Item	 images/AddProduct.png
+orders.php	 Edit Item	 images/EditProduct.png
+orders.php	 Delete Item	 images/DeleteProduct.png
+orders.php	 Add	 images/AddOrder.png	 process_add_order
+orders.php	 Cancel	 images/Update.png
+orders.php	 Update	 images/Update.png	 update_order
+orders.php	 Cancel	 images/Update.png
+orders.php	 Add Item	 images/AddProduct.png	 process_add_order_item
+orders.php	 Cancel	 images/Update.png	 top.close_current_dialog
+orders.php	 Update	 images/Update.png	 update_order_item
+orders.php	 Cancel	 images/Update.png	 top.close_current_dialog
+pricebreak.php	 Add Price	 images/AddInventory.png
+pricebreak.php	 Delete Price	 images/DeleteInventory.png
+pricebreak.php	 Set Price Breaks	 images/AddInventory.png
+pricebreak.php	 Cancel	 images/Update.png	 top.close_current_dialog
+productdata.php	 Add Data Record	 images/AddImage.png
+productdata.php	 Cancel	 images/Update.png
+productdata.php	 Update	 images/Update.png	 update_data
+productdata.php	 Cancel	 images/Update.png
+products.php	 Add Product	 images/AddProduct.png
+products.php	 Edit Product	 images/EditProduct.png
+products.php	 Delete Product	 images/DeleteProduct.png
+products.php	 Rebuild Cache	 images/AdminUsers.png
+products.php	 Select	 images/Update.png
+products.php	 Close	 images/Update.png
+products.php	 New Category	 images/AddCategory.png
+products.php	 NewProduct	 images/AddProduct.png
+products.php	 AddProduct	 images/AddProduct.png	 process_add_product
+products.php	 Cancel	 images/Update.png	 top.close_current_dialog
+products.php	 Update	 images/Update.png	 update_product
+products.php	 Cancel	 images/Update.png	 close_product_dialog
+products.php	 Select	 images/Update.png	 select_product
+products.php	 Cancel	 images/Update.png	 top.close_current_dialog
+punchlist.php	 Add Item	 images/AddPunchList.png
+punchlist.php	 Edit Item	 images/EditPunchList.png
+punchlist.php	 Delete Item	 images/DeletePunchList.png
+punchlist.php	 View Item	 images/ViewPunchList.png
+punchlist.php	 Close	 images/Update.png	 top.close_current_dialog
+punchlist.php	 Add Item	 images/AddPunchList.png
+punchlist.php	 Cancel	 images/Update.png	 top.close_current_dialog
+punchlist.php	 Update	 images/Update.png	 update_punchlist
+punchlist.php	 Cancel	 images/Update.png	 top.close_current_dialog
+reports.php	 Run Report	 images/RunReport.png	 run_report
+templates.php	 Edit Template	 images/EditUser.png	 edit_template
+templates.php	 Add Attachment	 images/AddAttachment.png	 add_attachment
+templates.php	 Delete Attachment	 images/DeleteAttachment.png	 delete_attachment
+templates.php	 Close	 images/Update.png	 top.close_current_dialog
+templates.php	 Add Attachment	 images/AddAttachment.png	 process_add_attachment
+templates.php	 Cancel	 images/Update.png	 top.close_current_dialog
+utility.php	 Upload Image	 images/AddImage.png	 process_upload_file
+utility.php	 Cancel	 images/Update.png	 top.close_current_dialog

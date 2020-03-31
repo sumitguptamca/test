@@ -1,0 +1,33 @@
+/*
+                Inroads Shopping Cart - Catalog Config Style Sheet
+
+                      Written 2015-2017 by Randall Severy
+                       Copyright 2015-2017 Inroads, LLC
+*/
+
+#fields_grid .aw-column-1 { text-align: center; }
+#fields_grid .aw-column-2 { text-align: center; }
+#fields_grid .aw-column-5 { text-align: center; }
+#fields_grid .aw-column-6 { text-align: center; }
+#fields_grid .aw-column-7 { text-align: center; }
+#fields_grid .aw-column-8 { text-align: center; }
+#fields_grid .aw-column-9 { text-align: center; }
+#fields_grid .aw-column-10 { text-align: center; }
+#fields_grid .aw-column-11 { text-align: center; }
+
+#templates_table {
+  width: 100%;
+}
+
+#templates_table td.fieldprompt {
+  width: 275px;
+}
+
+#backups_table {
+  width: 100%;
+}
+
+select.search_category {
+  width: 208px;
+}
+

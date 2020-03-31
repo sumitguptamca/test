@@ -1,0 +1,109 @@
+/*
+               Inroads Shopping Cart - Categories Tab Style Sheet
+
+                        Written 2008-2018 by Randall Severy
+                         Copyright 2008-2018 Inroads, LLC
+*/
+
+.cat_category_tab { width: 80px; }
+.cat_specs_tab { width: 65px; }
+.cat_image_tab { width: 80px; }
+.cat_subcategory_tab { width: 110px; }
+.cat_parentcategory_tab { width: 140px; }
+.cat_product_tab { width: 80px; }
+.cat_seo_tab { width: 80px; }
+
+.tab_section { width: 710px; }
+.tab_row_middle_cell { width: 100%; }
+
+#categories_grid .aw-column-3 { text-align: center; }
+#categories_grid .aw-column-4 { text-align: center; }
+#categories_grid .aw-column-5 { text-align: center; }
+#categories_grid .aw-column-6 { text-align: center; }
+#categories_grid .aw-column-7 { text-align: center; }
+
+#category_table {
+  width: 100%;
+}
+
+#category_table .fieldprompt {
+  width: 150px;
+}
+
+.cat_template_cell .innerprompt {
+  padding-left: 10px;
+}
+
+.cat_template_cell label {
+  margin-right: 5px;
+}
+
+#seo_table {
+  width: 100%;
+}
+
+#seo_table .fieldprompt {
+  width: 130px;
+}
+
+.view_link {
+  color: #0064A3;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.previous_link {
+  color: #0064A3;
+  font-size: 12px;
+  position: absolute;
+  bottom: 30px;
+  left: -142px;
+}
+
+.next_link {
+  color: #0064A3;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0px;
+  left: -125px;
+}
+
+div.sample_image img {
+  max-width: 100px;
+}
+
+.category_filters_div {
+  overflow: auto;
+//  height: 475px;
+  width: 100%;
+}
+
+#category_filters_table {
+  width: 100%;
+}
+
+.category_filters_row {
+  width: 100%;
+}
+
+.sublist_filters {
+  margin-top: 4px;
+}
+
+.sublist_filters .filter {
+  display: inline-block;
+}
+
+.sublist_filters span {
+  color: #000000;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-right: 5px;
+}
+
+.sublist_filters select {
+  font-size: 11px;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+}

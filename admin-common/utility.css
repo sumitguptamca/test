@@ -1,0 +1,99 @@
+/*
+               Inroads Control Panel/Shopping Cart - Utility Style Sheet
+
+                        Written 2008-2012 by Randall Severy
+                         Copyright 2008-2012 Inroads, LLC
+*/
+
+.search_cell {
+  background-image: url(images/search-bg.gif);
+  background-repeat: no-repeat;
+  width: 148px;
+  height: 65px;
+}
+
+form {
+  margin: 0px;
+}
+
+.search_div {
+  position: relative;
+  height: 65px;
+}
+
+.search_button {
+  position: absolute;
+  top: 3px;
+  left: 8px;
+  cursor: pointer;
+}
+
+.search_input {
+  position: absolute;
+  top: 22px;
+  left: 8px;
+  width: 129px;
+  height: 20px;
+  font-size: 12px;
+}
+
+.search_reset {
+  position: absolute;
+  top: 45px;
+  left: 105px;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+A:link.search_reset { text-decoration:underline; color:#FFFFFF; }
+A:visited.search_reset { text-decoration:underline; color:#FFFFFF; }
+A:hover.search_reset { text-decoration:underline; color:#FFFFFF; }
+
+.small_search_div {
+  position: relative;
+  margin-top: 5px;
+  background-image: url(images/small-search-bg.gif);
+  width: 300px;
+  height: 25px;
+}
+
+.small_search_button {
+  position: absolute;
+  top: 4px;
+  left: 5px;
+  cursor: pointer;
+}
+
+.small_search_input {
+  position: absolute;
+  top: 2px;
+  left: 80px;
+  width: 165px;
+  height: 20px;
+  font-size: 12px;
+}
+
+.small_search_reset {
+  position: absolute;
+  top: 4px;
+  left: 255px;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+A:link.small_search_reset { text-decoration:underline; color:#FFFFFF; }
+A:visited.small_search_reset { text-decoration:underline; color:#FFFFFF; }
+A:hover.small_search_reset { text-decoration:underline; color:#FFFFFF; }
+
+.check_websites {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+}
+
+.compact-filter select {
+  font-size: 0.75rem;
+}
+

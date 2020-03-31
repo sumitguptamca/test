@@ -1,0 +1,23 @@
+/*
+              Inroads Shopping Cart - Banner Ads Tab Style Sheet
+
+                         Written 2015 by Randall Severy
+                          Copyright 2015 Inroads, LLC
+*/
+
+body.screenBody {
+  overflow: hidden;
+}
+
+#slots_grid .aw-column-0 { text-align: center; }
+#slots_grid .aw-column-2 { text-align: center; }
+#slots_grid .aw-column-3 { text-align: center; }
+#ads_grid .aw-column-4 { text-align: center; }
+#ads_grid .aw-column-5 { text-align: center; }
+
+#preview_div {
+  display: inline-block;
+  float: right;
+  width: 420px;
+}
+

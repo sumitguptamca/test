@@ -1,0 +1,37 @@
+Installation of TheFind Module
+==============================
+
+1) Upload shopping/thefind.php to admin/shopping directory
+
+2) Upload shopping/thefind/feed.php, to the admin/shopping/thefind
+   directory
+
+3) Import TheFind tables and fields with:
+
+mysql -h <hostname> -u <db user> -p<db pw> <db name> < thefind.sql
+
+4) Go to http://www.thefind.com
+
+5) Click on the "Merchant Center" link in the footer
+
+6) Log in with a valid TheFind account or create a new account
+
+7) Click on an existing Store or Add a Store
+
+8) Click on the "Sales Tax Info" link in the left navigation and specify the
+   tax settings
+
+9) Click on the "Shipping Rates" link in the left navigation and specify the
+   shipping settings
+
+10) Click on the "Product Feed Upload"  link in the left navigation
+
+11) Click on the "Schedule a Fetch >" button
+
+12) Choose "Daily" for "Fetch my feed"
+
+13) Enter the following URL into the "Specify Web Address" field:
+    http://www.domain.com/admin/shopping/thefind/feed.php
+
+14) Click the "Schedule Fetch" button
+

@@ -1,0 +1,68 @@
+/*
+            Inroads Control Panel/Shopping Cart - Admin Tab Style Sheet
+
+                      Written 2009-2015 by Randall Severy
+                       Copyright 2009-2015 Inroads, LLC
+*/
+
+.config_settings_tab { width: 75px; }
+.config_images_tab { width: 75px; }
+.config_map_tab { width: 90px; }
+.config_tab_section { width: 400px; }
+.tab_row_middle_cell { width: 100%; }
+
+.lookup_link {
+  font-size: 12px;
+  font-family: Arial,Helvetica,sans-serif;
+  color: #636466;
+}
+
+.iframe_content {
+  padding: 0px;
+}
+
+.admin_screen_body {
+  margin: 10px 0px 0px 0px;
+  padding: 0 10px 10px;
+  font-family: Arial,Helvetica,sans-serif;
+}
+
+.admin_other_body {
+  font-family: Arial,Helvetica,sans-serif;
+  margin: 10px 0px 0px 0px;
+  padding: 0 10px 10px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.admin_other_body .page_table {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.admin_other_body .content_cell {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+}
+
+.info_box {
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 163px;
+  height: 70px;
+}
+
+.buttonwrapper {
+  margin: 0 auto;
+  float: none;
+}
+
+#TimePeriods {
+  padding: 5px;
+}
+

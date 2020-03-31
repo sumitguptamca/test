@@ -1,0 +1,34 @@
+#
+#         Inroads Shopping Cart - Amazon Shopping Module Setup Script
+#
+[Dirs]
+$DOCROOT/admin
+$DOCROOT/admin/shopping
+$DOCROOT/admin/shopping/amazon
+$DOCROOT/admin/upgrade
+
+[Files]
+shopping/*,$DOCROOT/admin
+upgradeutil.php,$DOCROOT/admin/upgrade
+installamazon.php,$DOCROOT/admin/upgrade
+*.sql,$DOCROOT/admin/upgrade
+
+[Info]
+Product=Inroads Amazon Shopping Module 
+ConfigFileNames=wsd.conf
+$if WIN32
+PHPPrograms=C:\PROGRA~1\php\php.exe,C:\PHP\php.exe
+$else
+PHPPrograms=/usr/local/bin/php,/usr/bin/php
+$endif
+UpgradeProgram=$PHP $DOCROOT/admin/upgrade/installamazon.php
+
+[DeleteFiles]
+$DOCROOT/admin/upgrade/installamazon.php
+$DOCROOT/admin/upgrade/amazon.sql
+$DOCROOT/admin/upgrade/amazon_item_types.sql
+$DOCROOT/admin/upgradeutil.php
+
+[DeleteDirs]
+$DOCROOT/admin/upgrade
+

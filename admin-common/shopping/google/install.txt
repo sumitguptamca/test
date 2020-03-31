@@ -1,0 +1,59 @@
+Installation of Google Shopping Module
+======================================
+
+1) Upload shopping/google.php to admin/shopping directory
+
+2) Upload shopping/google/googleshopping.php, cmd.php, config.php, config.js,
+   and admin.php to the admin/shopping/amazon directory
+
+3) Import Google Shopping tables and fields with:
+
+mysql -h <hostname> -u <db user> -p<db pw> <db name> < google.sql
+
+4) Go to https://www.google.com/retail/merchant-center/
+
+5) Log in with a valid Google account or create a new account
+
+6) Copy the listed Merchant ID and paste it into the Merchant ID field in
+   the Google Shopping section of the Cart Config->Shopping tab.
+
+7) Go to the Settings->Tax and Settings->Shipping screens and fill in as
+   many fields as possible and set up at least one Shipping Method.
+
+8) Sign up for a Google Shopping API key through the following URL:
+   https://console.developers.google.com
+
+9) Create a project ("Search API for Shopping Project") if there isn’t one already
+
+10) Select the project
+
+11) In the left sidebar, select "APIs & auth" and then "APIs"
+
+12) If "Content API for Shopping" is not in the "Enabled APIs" list,
+    search for "Shopping" and select "Content API for Shopping" and click on
+    "Enable API"
+
+13) In the left sidebar, select "Credentials"
+
+14) Click "Create new Client ID" and select "Service account" and then "Create Client ID"
+
+15) Generate new P12 key and save it in a local file and upload to the admin directory
+
+16) Copy the Client ID and  E-Mail Address from Credentials screen and paste them into
+    the Google Shopping section of the Cart Config->Shopping tab
+
+17) Enter the Key File name into the Google Shopping section of the Cart Config->Shopping
+    tab
+
+18) In the Merchant Center, go to Settings->Users and click on "+USER"
+
+19) Add the Service Account Email address as the new user with Administrative access
+
+20) Set the Google Shopping Category and Product Type for all products.
+
+21) Import all existing products in the web site using the following URL: http://www.domain.com/admin/shopping/google/cmd.php?cmd=loaditems
+
+22) Set up the following cron job to refresh up to 100 products on Google every hour:
+
+0 * * * * cd /home/{domain}/public_html/admin/shopping/google; /usr/local/bin/php cmd.php > googleshopping.out 2>&1
+

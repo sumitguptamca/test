@@ -1,0 +1,27 @@
+/*
+          Inroads Shopping Cart - Vendor Category Mapping Tab Style Sheet
+
+                        Written 2014-2019 by Randall Severy
+                         Copyright 2014-2019 Inroads, LLC
+*/
+
+#mapping_grid .aw-column-2 { text-align: center; }
+
+label[for=unmapped_only]
+{
+  font-size: 12px;
+}
+
+.map_search_cell {
+  padding-top: 0px;
+}
+
+.small_search_div {
+  margin-top: 0px;
+}
+
+div.small_search_div span.search_button {
+  font-size: 12px !important;
+  padding-top: 2px;
+}
+

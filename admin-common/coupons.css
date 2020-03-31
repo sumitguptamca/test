@@ -1,0 +1,51 @@
+/*
+                Inroads Shopping Cart - Coupons Tab Style Sheet
+
+                       Written 2009-2018 by Randall Severy
+                        Copyright 2009-2018 Inroads, LLC
+*/
+
+.coupon_tab { width: 80px; }
+.coupon_products_tab { width: 90px; }
+.coupon_customers_tab { width: 100px; }
+.tab_section { width: 700px; }
+.tab_row_middle_cell { width: 100%; }
+
+#coupons_grid .aw-column-3 { text-align: right; }
+#coupons_grid .aw-column-6 { text-align: center; }
+#coupons_grid .aw-column-7 { text-align: center; }
+#coupons_grid .aw-column-8 { text-align: right; }
+#coupons_grid .aw-column-10 { text-align: center; }
+
+#offers_grid {
+  float: left;
+}
+
+#offers_grid .aw-column-3 { text-align: right; }
+#offers_grid .aw-column-6 { text-align: center; }
+#offers_grid .aw-column-7 { text-align: center; }
+#offers_grid .aw-column-8 { text-align: right; }
+#offers_grid .aw-column-10 { text-align: center; }
+
+#inventory_grid .aw-column-4 { text-align: center; }
+
+#discounts_grid .aw-column-1 { text-align: center; }
+#discounts_grid .aw-column-2 { text-align: center; }
+#discounts_grid .aw-column-3 { text-align: center; }
+
+#usage_grid .aw-column-6 { text-align: right; }
+#usage_grid .aw-column-7 { text-align: right; }
+
+#coupon_table {
+  width: 100%;
+}
+
+#buy1_flag {
+  padding-left: 10px;
+}
+
+#free_product_cell {
+  margin-right: 20px;
+  vertical-align: bottom;
+}
+
